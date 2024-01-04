@@ -17,8 +17,6 @@ For example, the [Living Standards Measurement Study (LSMS)](https://www.worldba
 
 In addition to existing remote sensing data resources described above, Bank teams can task new remote sensing data collection, using a combination of vendors and in-house expertise. DEC's Geospatial Operations Support Team (GOST) can support new satellite imagery tasking, while the Global Faciltiry for Disaster Risk Reduction (GFDRR) can support new field drone data collection. For both data collection methods, the ITS GeoLab can support imagery storage, processing, and access.
 
-
-
 ## Crowdsourcing
 
 Crowdsourcing can be an economical and quick means to collect data across a large area that may otherwise be difficult to capture. Crowdsourcing can include field data collection via mobile application for image capture (e.g., streetview imagery, advertised goods prices) and/or short-answer questions, survey on a social media platform, or web-based data labeling tasks using a crowd-sourced work platform.
@@ -26,6 +24,10 @@ Crowdsourcing can be an economical and quick means to collect data across a larg
 ## Data Management
 
 For newly collected data, the DEC Development Data Hub team can provide support for formatting, tagging, and hosting collected datasets.
+
+![](images/intro-hub-collection-syria.png)
+
+> *Fig. X*  The Data Lab worked with the DEC Data Group (DECDG) Development Data Hub team to create a special [Syria Economic Monitor collection](https://datacatalog.worldbank.org/int/getting-started) in the World Bank Data Catalogue to ensure all project data can be easily accessed by the team and third parties. Similar collections can be made for other Data Goods packages, to ensure all data are hosted and readily accessible from one place.
 
 # Recommendations
 
