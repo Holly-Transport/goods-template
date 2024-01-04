@@ -27,14 +27,10 @@ The [Development Data Partnership](https://datapartnership.org/) supports data s
 
 > *Fig. 1* The Development Data Partnership manages ~30 pro-bono and on-demand data sharing agreements with firms on behalf of all World Bank staff. Staff can apply for access to these datasets through the Data Partnership portal: https://datapartnership.org/
 
-
-
 ## Data Management
 
 For open datasets, the Data Lab works with the DECDG Development Data Hub team to create a 'collection' in the [World Bank Data Catalogue](https://datacatalog.worldbank.org/int/home) to ensure all datasets are readily accessible by the project team, government counterparts, and third parties. 
 
-
-
-![](images/intro-hub-collection-syria.png)
+<img title="" src="images/intro-hub-collection-syria.png" alt="" width="467" data-align="center">
 
 > *Fig. 2* The Data Lab worked with the DEC Data Group (DECDG) Development Data Hub team to create a special [Syria Economic Monitor collection](https://datacatalog.worldbank.org/int/getting-started) in the World Bank Data Catalogue to ensure all project data can be easily accessed by the team and third parties. Similar collections can be made for other Data Goods packages, to ensure all data are hosted and readily accessible from one place.
