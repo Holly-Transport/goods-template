@@ -2,20 +2,28 @@ format: jb-book
 root: README
 
 parts:
-  - caption: Examples
-    numbered: True
+  - caption: Introduction to Data Goods
     chapters:
-      - file: notebooks/world-bank-api.ipynb
-      - file: notebooks/world-bank-package.ipynb
-      - file: notebooks/nasa-apod.ipynb
-      - file: notebooks/bibliography.ipynb
-  - caption: Gallery
+      - file: docs/1-introduction-todata-goods.md
+  - caption: Foundational Datasets
     chapters:
-      - file: docs/gallery
-  - caption: Templates
+      - file: docs/2-foundational-data.md
+      sections:
+        - file: docs/2a-existing-data.md
+        - file: docs/2b-digitizing-gov-data.md
+        - file: docs/2c-new-data-collection.md
+  - caption: Reusable Data Products
     chapters:
-      - file: docs/CODE_OF_CONDUCT
-      - file: CONTRIBUTING
+      - file: docs/3-reusable-data-products.md
+      - file: notebooks/nighttime-lights/README
+        sections:
+          - file: notebooks/nighttime-lights/nighttime-lights.ipynb
+          - file: notebooks/nighttime-lights/nighttime-lights-in-jordan.ipynb
+  - caption: Sample Insights and Indicators
+      - file: docs/4-sample-insigfhts-and-ind.md
+  - caption: Acknowledgements
+    chapters:
+      - file: docs/team.md
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
