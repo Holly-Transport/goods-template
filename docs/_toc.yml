@@ -8,7 +8,7 @@ parts:
   - caption: Foundational Datasets
     chapters:
       - file: docs/2-foundational-data.md
-      sections:
+        sections:
         - file: docs/2a-existing-data.md
         - file: docs/2b-digitizing-gov-data.md
         - file: docs/2c-new-data-collection.md
