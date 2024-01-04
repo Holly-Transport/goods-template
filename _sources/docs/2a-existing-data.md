@@ -18,3 +18,17 @@ Notes
 | 4   | WorldPop                                          | Open                                    | Population Density Estimates data                                  | 2020                                         | [WorldPop](https://hub.worldpop.org/geodata/summary?id=46388)                 | [Data Lab](mailto:datalab%40worldbank.org)                                                                      |
 | 5   | OpenStreetMaps                                    | Open                                    | Points of Interest                                                 | N/A                                          | [HdX](https://data.humdata.org/search?q=palestine&ext_search_source=main-nav) | [Data Lab](mailto:datalab%40worldbank.org)                                                                      |
 | 6   | Microsoft Building Footprints                     | Open                                    | Building Footprints                                                | N/A                                          | [GitHub](https://github.com/microsoft/GlobalMLBuildingFootprints)             | [Data Lab](mailto:datalab%40worldbank.org)                                                                      |
+
+## Development Data Partnership
+
+The [Development Data Partnership](https://datapartnership.org/) supports data sharing and data science collaboration between international organizations and companies. Through the Partnership, World Bank teams can apply to access ~30 pro-bono data sharing agreements signed with tech companies on behalf of all staff. 
+
+![](images/intro-partnership-logos.png)
+
+```
+{figure}
+---
+height: 0px
+---
+The Development Data Partnership manages ~30 pro-bono and on-demand data sharing agreements with firms on behalf of all World Bank staff. Staff can apply for access to these datasets through the Data Partnership portal: https://datapartnership.org/
+```
