@@ -29,8 +29,6 @@ parts:
         sections:
           - file: notebooks/syria-forest-cover/syria_forest.ipynb
       - file: notebooks/syria-hsos-survey/README
-        sections:
-          - file: notebooks/syria-hsos-survey/SEM-survey-analysis.md
   - caption: Sample Insights and Indicators
     chapters:
       - file: docs/4-sample-insights-and-ind.md
