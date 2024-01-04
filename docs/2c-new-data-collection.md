@@ -21,11 +21,9 @@ In addition to existing remote sensing data resources described above, Bank team
 
 > *Fig. 2* The DEC Geospatial Operations Support Team (GOST) commissioned the industry-standard introductory resource for using satellite imagery in international development work – [The State of Satellites](https://landscape.satsummit.io/). 
 
-<img title="" src="images/intro-gfdrr-drones.png" alt="" width="313" data-align="center">
+
 
 > *Fig. 3* GFDRR leads the World Bank’s government capacity building efforts to collect drone imagery for public sector programs. This is the cover of GFDRR's recently published guide on [Small Island Mapping with Unmanned Aerial Vehicles (UAVs)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content).
-
-
 
 ![](images/intro-geolab-drones.png)
 
