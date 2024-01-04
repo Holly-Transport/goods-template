@@ -17,11 +17,11 @@ For example, the [Living Standards Measurement Study (LSMS)](https://www.worldba
 
 In addition to existing remote sensing data resources described above, Bank teams can task new remote sensing data collection, using a combination of vendors and in-house expertise. DEC's Geospatial Operations Support Team (GOST) can support new satellite imagery tasking and advisory, while the Global Faciltiry for Disaster Risk Reduction (GFDRR) can support new field drone data collection. For both data collection methods, the ITS GeoLab can support imagery storage, processing, and access.
 
-![](images/intro-gost-sat.png)
+![](images/intro-gfdrr-drones.png)
 
 > *Fig. 2* The DEC Geospatial Operations Support Team (GOST) commissioned the industry-standard introductory resource for using satellite imagery in international development work – [The State of Satellites](https://landscape.satsummit.io/). 
 
-<img title="" src="images/intro-gfdrr-drones.png" alt="" width="288" data-align="center">
+![](images/intro-gost-sat.png)
 
 > *Fig. 3* GFDRR leads the World Bank’s government capacity building efforts to collect drone imagery for public sector programs. This is the cover of GFDRR's recently published guide on [Small Island Mapping with Unmanned Aerial Vehicles (UAVs)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content).
 
@@ -37,17 +37,16 @@ Crowdsourcing can be an economical and quick means to collect data across a larg
 
 > *Fig. 5*[ Laomap.org](https://www.laomap.org/), created by WB Data Lab Task Team to support field transport data crowdsourcing -- mapping rural roads for a lending program, capturing streetview imagery, and collecting post-flood road data -- and government training. 
 
-<img title="" src="images/intro-crowd-turk.png" alt="" width="364" data-align="center">
+![](images/intro-crowd-turk.png)
 
 > *Fig. 6* This is a screen capture from an AWS Mechanical Turk crowdsourced task prepared by the Data Lab, where thousands of on-line workers were requested to identify rooftop features for use in a disaster risk management investment program in St. Lucia, led by Sarah Antos, Senior Land Administration Specialist.
 
-## 
 
 ## Data Management
 
 For newly collected data, the DEC Development Data Hub team can provide support for formatting, tagging, and hosting collected datasets.
 
-<img title="" src="images/intro-data-manage.png" alt="" width="343" data-align="center">
+![](images/intro-data-manage.png)
 
 > *Fig. 7*  The DEC Data Group’s Development Data Hub team has extensive experience designing and implementing data acquisition, archiving, and dissemination policies and governance. For more information, see: [Development Data Hub](https://datacatalog.worldbank.org/int/getting-started)
 
