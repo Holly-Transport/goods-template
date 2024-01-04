@@ -18,8 +18,6 @@ xxxx
 
 > *Fig. 1* The Natural Language Processing for Development ([NLP4Dev](https://www.nlp4dev.org/)) platform, led by the DEC Data Group, is an open-source library and application to quickly transform government documents into searchable text and insights. 
 
-
-
 # Recommendations
 
 )For this Data Good, the team recommends <insert recomendation(s) for the case country/countries>
