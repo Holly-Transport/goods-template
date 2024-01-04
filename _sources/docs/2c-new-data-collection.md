@@ -17,37 +17,25 @@ For example, the [Living Standards Measurement Study (LSMS)](https://www.worldba
 
 In addition to existing remote sensing data resources described above, Bank teams can task new remote sensing data collection, using a combination of vendors and in-house expertise. DEC's Geospatial Operations Support Team (GOST) can support new satellite imagery tasking and advisory, while the Global Faciltiry for Disaster Risk Reduction (GFDRR) can support new field drone data collection. For both data collection methods, the ITS GeoLab can support imagery storage, processing, and access.
 
-
-
 ![](images/intro-gost-sat.png)
 
 > *Fig 2* The DEC Geospatial Operations Support Team (GOST) commissioned the industry-standard introductory resource for using satellite imagery in international development work – [The State of Satellites](https://landscape.satsummit.io/). 
-
-
 
 <img title="" src="images/intro-gfdrr-drones.png" alt="" width="313" data-align="center">
 
 > *Fig 3* GFDRR leads the World Bank’s government capacity building efforts to collect drone imagery for public sector programs. This is the cover of GFDRR's recently published guide on [Small Island Mapping with Unmanned Aerial Vehicles (UAVs)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content).
 
-
-
 ![](images/intro-geolab-drones.png)
 
 > *Fig 4* The [ITS GeoLab](https://geowb.worldbank.org/portal/apps/Cascade/index.html?appid=4818a534d02245179c120b7aa21598b6) supports task teams on drone vendor procurement, image processing, and image storage. 
-
-
 
 ## Crowdsourcing
 
 Crowdsourcing can be an economical and quick means to collect data across a large area that may otherwise be difficult to capture. Crowdsourcing can include field data collection via mobile application for image capture (e.g., streetview imagery, advertised goods prices) and/or short-answer questions, survey on a social media platform, or web-based data labeling tasks using a crowd-sourced work platform.
 
-
-
 ![](images/intro-crowdsource-laos.png)
 
 > *Fig 5*[ Laomap.org](https://www.laomap.org/), created by WB Data Lab Task Team to support field transport data crowdsourcing -- mapping rural roads for a lending program, capturing streetview imagery, and collecting post-flood road data -- and government training. 
-
-
 
 ![](images/intro-crowd-turk.png)
 
@@ -59,9 +47,9 @@ Crowdsourcing can be an economical and quick means to collect data across a larg
 
 For newly collected data, the DEC Development Data Hub team can provide support for formatting, tagging, and hosting collected datasets.
 
-![](images/intro-hub-collection-syria.png)
+![](images/intro-data-manage.png)
 
-> *Fig. X*  The Data Lab worked with the DEC Data Group (DECDG) Development Data Hub team to create a special [Syria Economic Monitor collection](https://datacatalog.worldbank.org/int/getting-started) in the World Bank Data Catalogue to ensure all project data can be easily accessed by the team and third parties. Similar collections can be made for other Data Goods packages, to ensure all data are hosted and readily accessible from one place.
+> *Fig. 7*  The DEC Data Group’s Development Data Hub team has extensive experience designing and implementing data acquisition, archiving, and dissemination policies and governance. For more information, see: [Development Data Hub](https://datacatalog.worldbank.org/int/getting-started)
 
 # Recommendations
 
