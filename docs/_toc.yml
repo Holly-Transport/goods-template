@@ -21,10 +21,10 @@ parts:
           - file: notebooks/nighttime-lights/nighttime-lights-in-jordan.ipynb
   - caption: Sample Insights and Indicators
     chapters:
-      - file: docs/4-sample-insigfhts-and-ind.md
+      - file: docs/4-sample-insights-and-ind.md
   - caption: Acknowledgements
     chapters:
-      - file: docs/team.md
+      - file: docs/5-team.md
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
