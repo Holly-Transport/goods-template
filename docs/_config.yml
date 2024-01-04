@@ -5,7 +5,7 @@ logo: docs/images/logo.png
 only_build_toc_files: true
 
 repository:
-  url: https://github.com/holly-transport/goods-template
+  url: https://github.com/Holly-Transport/goods-template/
   branch: main
 
 #######################################################################################
