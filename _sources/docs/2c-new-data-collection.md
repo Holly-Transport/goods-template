@@ -37,7 +37,7 @@ Crowdsourcing can be an economical and quick means to collect data across a larg
 
 > *Fig 5*[ Laomap.org](https://www.laomap.org/), created by WB Data Lab Task Team to support field transport data crowdsourcing -- mapping rural roads for a lending program, capturing streetview imagery, and collecting post-flood road data -- and government training. 
 
-![](images/intro-crowd-turk.png)
+<img title="" src="images/intro-crowd-turk.png" alt="" width="495" data-align="center">
 
 > *Fig 6* This is a screen capture from an AWS Mechanical Turk crowdsourced task prepared by the Data Lab, where thousands of on-line workers were requested to identify rooftop features for use in a disaster risk management investment program in St. Lucia, led by Sarah Antos, Senior Land Administration Specialist.
 
