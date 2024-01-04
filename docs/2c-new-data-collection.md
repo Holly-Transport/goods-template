@@ -27,8 +27,8 @@ In addition to existing remote sensing data resources described above, Bank team
 
 
 
-| <span style="color:white">xxxxxxxxx</span> | <span style="color:white">xxxxxxxxxx</span> | ![](images/intro-gfdrr-drones.png) | <span style="color:white">xxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxx</span> |
-| ------------------------------------------ | ------------------------------------------- | ---------------------------------- | ------------------------------------------- | ------------------------------------------- |
+| <span style="color:white">xxxxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxxxxx</span> | ![](images/intro-gfdrr-drones.png) | <span style="color:white">xxxxxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxxxxx</span> |
+| ------------------------------------------------ | ------------------------------------------------- | ---------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
 
 > *Fig. 3* GFDRR leads the World Bank’s government capacity building efforts to collect drone imagery for public sector programs. This is the cover of GFDRR's recently published guide on [Small Island Mapping with Unmanned Aerial Vehicles (UAVs)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content).
 
@@ -52,8 +52,8 @@ Crowdsourcing can be an economical and quick means to collect data across a larg
 
 > *Fig. 5*[ Laomap.org](https://www.laomap.org/), created by WB Data Lab Task Team to support field transport data crowdsourcing -- mapping rural roads for a lending program, capturing streetview imagery, and collecting post-flood road data -- and government training. 
 
-| <span style="color:white">xxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxx</span> | ![](images/intro-crowd-turk.png) | <span style="color:white">xxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxx</span> |
-| ------------------------------------------- | ------------------------------------------- | -------------------------------- | ------------------------------------------- | ------------------------------------------- |
+| <span style="color:white">xxxxxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxxxxx</span> | ![](images/intro-crowd-turk.png) | <span style="color:white">xxxxxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxxxxx</span> |
+| ------------------------------------------------- | ------------------------------------------------- | -------------------------------- | ------------------------------------------------- | ------------------------------------------------- |
 
 > *Fig. 6* This is a screen capture from an AWS Mechanical Turk crowdsourced task prepared by the Data Lab, where thousands of on-line workers were requested to identify rooftop features for use in a disaster risk management investment program in St. Lucia, led by Sarah Antos, Senior Land Administration Specialist.
 
