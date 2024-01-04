@@ -1,0 +1,1157 @@
+
+
+<!DOCTYPE html>
+
+
+<html lang="en" data-content_root="" >
+
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
+
+    <title>Tree Cover Loss Analysis &#8212; Data Goods Template</title>
+  
+  
+  
+  <script data-cfasync="false">
+    document.documentElement.dataset.mode = localStorage.getItem("mode") || "";
+    document.documentElement.dataset.theme = localStorage.getItem("theme") || "light";
+  </script>
+  
+  <!-- Loaded before other Sphinx assets -->
+  <link href="../../_static/styles/theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/bootstrap.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+<link href="../../_static/styles/pydata-sphinx-theme.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+
+  
+  <link href="../../_static/vendor/fontawesome/6.5.1/css/all.min.css?digest=bd9e20870c6007c4c509" rel="stylesheet" />
+  <link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-solid-900.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-brands-400.woff2" />
+<link rel="preload" as="font" type="font/woff2" crossorigin href="../../_static/vendor/fontawesome/6.5.1/webfonts/fa-regular-400.woff2" />
+
+    <link rel="stylesheet" type="text/css" href="../../_static/pygments.css" />
+    <link rel="stylesheet" href="../../_static/styles/sphinx-book-theme.css?digest=14f4ca6b54d191a8c7657f6c759bf11a5fb86285" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/mystnb.4510f1fc1dee50b3e5859aac5469c37c29e427902b24a333a5f9fcb2f0b3ac41.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/custom.css" />
+    <link rel="stylesheet" type="text/css" href="../../_static/design-style.4045f2051d55cab465a707391d5b2007.min.css" />
+  
+  <!-- Pre-loaded scripts that we'll load fully later -->
+  <link rel="preload" as="script" href="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509" />
+<link rel="preload" as="script" href="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509" />
+  <script src="../../_static/vendor/fontawesome/6.5.1/js/all.min.js?digest=bd9e20870c6007c4c509"></script>
+
+    <script data-url_root="../../" id="documentation_options" src="../../_static/documentation_options.js"></script>
+    <script src="../../_static/jquery.js"></script>
+    <script src="../../_static/underscore.js"></script>
+    <script src="../../_static/_sphinx_javascript_frameworks_compat.js"></script>
+    <script src="../../_static/doctools.js"></script>
+    <script src="../../_static/clipboard.min.js"></script>
+    <script src="../../_static/copybutton.js"></script>
+    <script src="../../_static/scripts/sphinx-book-theme.js?digest=5a5c038af52cf7bc1a1ec88eea08e6366ee68824"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown';</script>
+    <script src="../../_static/design-tabs.js"></script>
+    <script>const THEBE_JS_URL = "https://unpkg.com/thebe@0.8.2/lib/index.js"
+const thebe_selector = ".thebe,.cell"
+const thebe_selector_input = "pre"
+const thebe_selector_output = ".output, .cell_output"
+</script>
+    <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'notebooks/syria-forest-cover/syria_forest';</script>
+    <link rel="canonical" href="https://holly-transport.github.io/goods-template/notebooks/syria-forest-cover/syria_forest.html" />
+    <link rel="shortcut icon" href="../../_static/favicon.ico"/>
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="Humanitarian Assistance Survey Data" href="../syria-hsos-survey/README.html" />
+    <link rel="prev" title="Tree Cover Loss Analysis" href="README.html" />
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="docsearch:language" content="en"/>
+    <meta name="docbuild:last-update" content="Jan 04, 2024"/>
+  </head>
+  
+  
+  <body data-bs-spy="scroll" data-bs-target=".bd-toc-nav" data-offset="180" data-bs-root-margin="0px 0px -60%" data-default-mode="">
+
+  
+  
+  <a id="pst-skip-link" class="skip-link" href="#main-content">Skip to main content</a>
+  
+  <div id="pst-scroll-pixel-helper"></div>
+
+  
+  <button type="button" class="btn rounded-pill" id="pst-back-to-top">
+    <i class="fa-solid fa-arrow-up"></i>
+    Back to top
+  </button>
+
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__primary"
+          id="__primary"/>
+  <label class="overlay overlay-primary" for="__primary"></label>
+  
+  <input type="checkbox"
+          class="sidebar-toggle"
+          name="__secondary"
+          id="__secondary"/>
+  <label class="overlay overlay-secondary" for="__secondary"></label>
+  
+  <div class="search-button__wrapper">
+    <div class="search-button__overlay"></div>
+    <div class="search-button__search-container">
+<form class="bd-search d-flex align-items-center"
+      action="../../search.html"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search this book..."
+         aria-label="Search this book..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form></div>
+  </div>
+
+  <header>
+  
+    <div class="bd-header navbar navbar-expand-lg bd-navbar">
+    </div>
+  
+  </header>
+
+  <div class="bd-container">
+    <div class="bd-container__inner bd-page-width">
+      
+      
+      
+        
+      
+      <div class="bd-sidebar-primary bd-sidebar">
+        
+
+  
+  <div class="sidebar-header-items sidebar-primary__section">
+    
+    
+    
+    
+  </div>
+  
+    <div class="sidebar-primary-items__start sidebar-primary__section">
+        <div class="sidebar-primary-item">
+
+  
+
+<a class="navbar-brand logo" href="../../README.html">
+  
+  
+  
+  
+  
+    
+    
+      
+    
+    
+    <img src="../../_static/logo.png" class="logo__image only-light" alt="Data Goods Template - Home"/>
+    <script>document.write(`<img src="../../_static/logo.png" class="logo__image only-dark" alt="Data Goods Template - Home"/>`);</script>
+  
+  
+</a></div>
+        <div class="sidebar-primary-item"><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item navbar-nav active">
+        <p aria-level="2" class="caption" role="heading"><span class="caption-text">Introduction to Data Goods</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../docs/1-intro-to-data-goods.html">Introduction to Data Goods</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Foundational Datasets</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1 has-children"><a class="reference internal" href="../../docs/2-foundational-data.html">Foundational Data</a><input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-1"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../../docs/2a-existing-data.html">Existing Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../docs/2b-digitizing-gov-data.html">Digitizing Government Data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../../docs/2c-new-data-collection.html">New Data Collection</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Reusable Data Products</span></p>
+<ul class="current nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../docs/3-reusable-data-products.html">Reusable Data Products</a></li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gaza-nighttime-lights/README.html">Nighttime Lights Trends</a><input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-2"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gaza-nighttime-lights/nighttime-lights.html">Nighttime Lights Trends in Gaza and West Bank</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../gaza-nighttime-lights/nighttime-lights-in-jordan.html">Nighttime Lights Trends in Jordan</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../gaza-damage-assessment/README.html">Estimating Damage to Buildings and Infrastructure</a><input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-3"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../gaza-damage-assessment/damage-assessment.html">Visualizing Damage Estimation in Gaza</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../turkiye-business-activity-trends/README.html">Business Activity Trends</a><input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-4"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../turkiye-business-activity-trends/01-business-activity-trends.html">Analysing business activity trends in Turkiye</a></li>
+</ul>
+</li>
+<li class="toctree-l1 current active has-children"><a class="reference internal" href="README.html">Tree Cover Loss Analysis</a><input checked="" class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-5"><i class="fa-solid fa-chevron-down"></i></label><ul class="current">
+<li class="toctree-l2 current active"><a class="current reference internal" href="#">Tree Cover Loss Analysis</a></li>
+</ul>
+</li>
+<li class="toctree-l1 has-children"><a class="reference internal" href="../syria-hsos-survey/README.html">Humanitarian Assistance Survey Data</a><input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/><label class="toctree-toggle" for="toctree-checkbox-6"><i class="fa-solid fa-chevron-down"></i></label><ul>
+<li class="toctree-l2"><a class="reference internal" href="../syria-hsos-survey/SEM-survey-analysis.html">Humanitarian Assistance Survey Data</a></li>
+</ul>
+</li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Sample Insights and Indicators</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../docs/4-sample-insights-and-ind.html">Sample Insights and Indicators</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Acknowledgements</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference internal" href="../../docs/5-team.html">Data Goods Team and Acknowedgements</a></li>
+</ul>
+<p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
+<ul class="nav bd-sidenav">
+<li class="toctree-l1"><a class="reference external" href="https://datapartnership.org">Development Data Partnership</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://wbdatalab.org">World Bank Data Lab</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.worldbank.org/en/about/unit/unit-dec">World Bank DEC</a></li>
+<li class="toctree-l1"><a class="reference external" href="https://www.worldbank.org/en/research/dime">World Bank DIME</a></li>
+</ul>
+
+    </div>
+</nav></div>
+    </div>
+  
+  
+  <div class="sidebar-primary-items__end sidebar-primary__section">
+  </div>
+  
+  <div id="rtd-footer-container"></div>
+
+
+      </div>
+      
+      <main id="main-content" class="bd-main">
+        
+        
+
+<div class="sbt-scroll-pixel-helper"></div>
+
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article">
+<div class="header-article-items header-article__inner">
+  
+    <div class="header-article-items__start">
+      
+        <div class="header-article-item"><label class="sidebar-toggle primary-toggle btn btn-sm" for="__primary" title="Toggle primary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+  <span class="fa-solid fa-bars"></span>
+</label></div>
+      
+    </div>
+  
+  
+    <div class="header-article-items__end">
+      
+        <div class="header-article-item">
+
+<div class="article-header-buttons">
+
+
+
+
+
+<div class="dropdown dropdown-source-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Source repositories">
+    <i class="fab fa-github"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="https://github.com/Holly-Transport/goods-template" target="_blank"
+   class="btn btn-sm btn-source-repository-button dropdown-item"
+   title="Source repository"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fab fa-github"></i>
+  </span>
+<span class="btn__text-container">Repository</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Holly-Transport/goods-template/edit/main/notebooks/syria-forest-cover/syria_forest.ipynb" target="_blank"
+   class="btn btn-sm btn-source-edit-button dropdown-item"
+   title="Suggest edit"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-pencil-alt"></i>
+  </span>
+<span class="btn__text-container">Suggest edit</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li><a href="https://github.com/Holly-Transport/goods-template/issues/new?title=Issue%20on%20page%20%2Fnotebooks/syria-forest-cover/syria_forest.html&body=Your%20issue%20content%20here." target="_blank"
+   class="btn btn-sm btn-source-issues-button dropdown-item"
+   title="Open an issue"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-lightbulb"></i>
+  </span>
+<span class="btn__text-container">Open issue</span>
+</a>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+
+
+<div class="dropdown dropdown-download-buttons">
+  <button class="btn dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false" aria-label="Download this page">
+    <i class="fas fa-download"></i>
+  </button>
+  <ul class="dropdown-menu">
+      
+      
+      
+      <li><a href="../../_sources/notebooks/syria-forest-cover/syria_forest.ipynb" target="_blank"
+   class="btn btn-sm btn-download-source-button dropdown-item"
+   title="Download source file"
+   data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file"></i>
+  </span>
+<span class="btn__text-container">.ipynb</span>
+</a>
+</li>
+      
+      
+      
+      
+      <li>
+<button onclick="window.print()"
+  class="btn btn-sm btn-download-pdf-button dropdown-item"
+  title="Print to PDF"
+  data-bs-placement="left" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-file-pdf"></i>
+  </span>
+<span class="btn__text-container">.pdf</span>
+</button>
+</li>
+      
+  </ul>
+</div>
+
+
+
+
+<button onclick="toggleFullScreen()"
+  class="btn btn-sm btn-fullscreen-button"
+  title="Fullscreen mode"
+  data-bs-placement="bottom" data-bs-toggle="tooltip"
+>
+  
+
+<span class="btn__icon-container">
+  <i class="fas fa-expand"></i>
+  </span>
+
+</button>
+
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn theme-switch-button" title="light/dark" aria-label="light/dark" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="theme-switch nav-link" data-mode="light"><i class="fa-solid fa-sun fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="dark"><i class="fa-solid fa-moon fa-lg"></i></span>
+    <span class="theme-switch nav-link" data-mode="auto"><i class="fa-solid fa-circle-half-stroke fa-lg"></i></span>
+  </button>
+`);
+</script>
+
+
+<script>
+document.write(`
+  <button class="btn btn-sm navbar-btn search-button search-button__button" title="Search" aria-label="Search" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <i class="fa-solid fa-magnifying-glass fa-lg"></i>
+  </button>
+`);
+</script>
+<label class="sidebar-toggle secondary-toggle btn btn-sm" for="__secondary"title="Toggle secondary sidebar" data-bs-placement="bottom" data-bs-toggle="tooltip">
+    <span class="fa-solid fa-list"></span>
+</label>
+</div></div>
+      
+    </div>
+  
+</div>
+</div>
+              
+              
+
+<div id="jb-print-docs-body" class="onlyprint">
+    <h1>Tree Cover Loss Analysis</h1>
+    <!-- Table of contents -->
+    <div id="print-main-content">
+        <div id="jb-print-toc">
+            
+            <div>
+                <h2> Contents </h2>
+            </div>
+            <nav aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-import-libraries">Step 1. Import Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-prepare-data-from-global-forest-watch">Step 2. Prepare data from Global Forest Watch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-create-pivot-table-to-show-change-in-forest-cover-loss-over-time-by-first-administrative-level">Step 3. Create pivot table to show change in forest cover loss over time, by first administrative level</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-calculate-cumulative-forest-cover-loss">Step 4. Calculate cumulative forest cover loss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-calculate-total-tree-cover-loss-by-administrative-level-1-identify-which-admin1s-account-for-the-greatest-losses-and-then-calculate-their-percent-of-the-national-total">Step 5. Calculate total tree cover loss by administrative level 1, identify which admin1s account for the greatest losses, and then calculate their percent of the national total</a></li>
+</ul>
+            </nav>
+        </div>
+    </div>
+</div>
+
+              
+                
+<div id="searchbox"></div>
+                <article class="bd-article">
+                  
+  <section class="tex2jax_ignore mathjax_ignore" id="tree-cover-loss-analysis">
+<h1>Tree Cover Loss Analysis<a class="headerlink" href="#tree-cover-loss-analysis" title="Permalink to this heading">#</a></h1>
+<section id="step-1-import-libraries">
+<h2>Step 1. Import Libraries<a class="headerlink" href="#step-1-import-libraries" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">pandas</span> <span class="k">as</span> <span class="nn">pd</span>
+<span class="kn">import</span> <span class="nn">seaborn</span> <span class="k">as</span> <span class="nn">sns</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+<span class="kn">from</span> <span class="nn">IPython.display</span> <span class="kn">import</span> <span class="n">display</span><span class="p">,</span> <span class="n">Markdown</span><span class="p">,</span> <span class="n">Latex</span><span class="p">,</span> <span class="n">Image</span>
+</pre></div>
+</div>
+</div>
+</div>
+</section>
+<section id="step-2-prepare-data-from-global-forest-watch">
+<h2>Step 2. Prepare data from <a class="reference external" href="https://www.globalforestwatch.org/">Global Forest Watch</a><a class="headerlink" href="#step-2-prepare-data-from-global-forest-watch" title="Permalink to this heading">#</a></h2>
+<p>Global forest watch sources its data from a <a class="reference external" href="http://earthenginepartners.appspot.com/science-2013-global-forest/download_v1.7.html">University of Maryland time-series analysis of Landsat images</a> that show global forest extent and change. These data can be downloaded for free, as .tiff files.</p>
+<p>Following is an example of what these files look like rendered using QGIS, in Syria, covering the period from 2000-2020. The intensity of the red color is commensurate with the intensity of forest cover loss.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/syria-tree-loss-2.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/6f811f3d313f4e207103d30875dedcba0434b2eb7c3aced4d262c64da9e659d0.png" src="../../_images/6f811f3d313f4e207103d30875dedcba0434b2eb7c3aced4d262c64da9e659d0.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">Image</span><span class="p">(</span><span class="s2">&quot;images/syria-tree-loss-3.png&quot;</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/3678a2e600f13b4a3d739f51f20832f6f6d7a566429e6b4acc0ccef3b237943d.png" src="../../_images/3678a2e600f13b4a3d739f51f20832f6f6d7a566429e6b4acc0ccef3b237943d.png" />
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Read in treecover data loss dataset and metadata. The metadata will help us match admin id numbers with their actual names</span>
+<span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/treecover_loss_by_region__ha.csv&quot;</span><span class="p">)</span>
+<span class="n">meta</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s2">&quot;data/adm1_metadata.csv&quot;</span><span class="p">,</span> <span class="n">usecols</span><span class="o">=</span><span class="p">[</span><span class="s2">&quot;name&quot;</span><span class="p">,</span> <span class="s2">&quot;adm1__id&quot;</span><span class="p">])</span>
+
+<span class="c1"># Merge data frames on adm1 column</span>
+<span class="n">merged_df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">merge</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">meta</span><span class="p">,</span> <span class="n">left_on</span><span class="o">=</span><span class="s2">&quot;adm1&quot;</span><span class="p">,</span> <span class="n">right_on</span><span class="o">=</span><span class="s2">&quot;adm1__id&quot;</span><span class="p">,</span> <span class="n">how</span><span class="o">=</span><span class="s2">&quot;left&quot;</span><span class="p">)</span>
+
+<span class="c1"># Drop original adm1 column and rename merged adm1 column to &quot;adm1&quot;</span>
+<span class="n">merged_df</span><span class="o">.</span><span class="n">drop</span><span class="p">(</span><span class="s2">&quot;adm1&quot;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+<span class="n">merged_df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span><span class="o">=</span><span class="p">{</span><span class="s2">&quot;name&quot;</span><span class="p">:</span> <span class="s2">&quot;adm1&quot;</span><span class="p">},</span> <span class="n">inplace</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span>
+
+<span class="c1"># Preview the new merged data frame</span>
+<span class="n">merged_df</span><span class="o">.</span><span class="n">head</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>iso</th>
+      <th>umd_tree_cover_loss__year</th>
+      <th>umd_tree_cover_loss__ha</th>
+      <th>gfw_gross_emissions_co2e_all_gases__Mg</th>
+      <th>adm1</th>
+      <th>adm1__id</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>SYR</td>
+      <td>2001</td>
+      <td>3.480518</td>
+      <td>763.156831</td>
+      <td>Al Ḥasakah</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>SYR</td>
+      <td>2001</td>
+      <td>23.259127</td>
+      <td>5419.176101</td>
+      <td>Aleppo</td>
+      <td>2</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>SYR</td>
+      <td>2001</td>
+      <td>7.879289</td>
+      <td>1948.088177</td>
+      <td>Ar Raqqah</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>SYR</td>
+      <td>2001</td>
+      <td>2.140265</td>
+      <td>545.701701</td>
+      <td>Dayr Az Zawr</td>
+      <td>7</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>SYR</td>
+      <td>2001</td>
+      <td>75.270909</td>
+      <td>20104.074759</td>
+      <td>Hamah</td>
+      <td>8</td>
+    </tr>
+  </tbody>
+</table>
+</div></div></div>
+</div>
+</section>
+<section id="step-3-create-pivot-table-to-show-change-in-forest-cover-loss-over-time-by-first-administrative-level">
+<h2>Step 3. Create pivot table to show change in forest cover loss over time, by first administrative level<a class="headerlink" href="#step-3-create-pivot-table-to-show-change-in-forest-cover-loss-over-time-by-first-administrative-level" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Create pivot table of tree cover loss by admin1 and year</span>
+<span class="n">pivot</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">pivot_table</span><span class="p">(</span><span class="n">merged_df</span><span class="p">,</span> <span class="n">values</span><span class="o">=</span><span class="s2">&quot;umd_tree_cover_loss__ha&quot;</span><span class="p">,</span>
+                       <span class="n">index</span><span class="o">=</span><span class="s2">&quot;adm1&quot;</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="s2">&quot;umd_tree_cover_loss__year&quot;</span><span class="p">,</span>
+                       <span class="n">aggfunc</span><span class="o">=</span><span class="nb">sum</span><span class="p">,</span> <span class="n">fill_value</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Display the pivot table</span>
+<span class="n">display</span><span class="p">(</span><span class="n">pivot</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output text_html"><div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th>umd_tree_cover_loss__year</th>
+      <th>2001</th>
+      <th>2002</th>
+      <th>2003</th>
+      <th>2004</th>
+      <th>2005</th>
+      <th>2006</th>
+      <th>2007</th>
+      <th>2008</th>
+      <th>2009</th>
+      <th>2010</th>
+      <th>...</th>
+      <th>2012</th>
+      <th>2013</th>
+      <th>2014</th>
+      <th>2015</th>
+      <th>2016</th>
+      <th>2017</th>
+      <th>2018</th>
+      <th>2019</th>
+      <th>2020</th>
+      <th>2021</th>
+    </tr>
+    <tr>
+      <th>adm1</th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Al Ḥasakah</th>
+      <td>3.480518</td>
+      <td>0.986151</td>
+      <td>0.862637</td>
+      <td>0.123263</td>
+      <td>0.061612</td>
+      <td>0.062083</td>
+      <td>0.000000</td>
+      <td>2.227976</td>
+      <td>0.309338</td>
+      <td>0.868839</td>
+      <td>...</td>
+      <td>1.489113</td>
+      <td>0.370907</td>
+      <td>0.124082</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Aleppo</th>
+      <td>23.259127</td>
+      <td>2.558609</td>
+      <td>14.358696</td>
+      <td>7.035085</td>
+      <td>6.465869</td>
+      <td>4.662156</td>
+      <td>7.333947</td>
+      <td>120.965704</td>
+      <td>18.725133</td>
+      <td>4.921604</td>
+      <td>...</td>
+      <td>16.887510</td>
+      <td>37.336229</td>
+      <td>19.853886</td>
+      <td>0.994854</td>
+      <td>1.116550</td>
+      <td>7.650396</td>
+      <td>25.461913</td>
+      <td>123.576922</td>
+      <td>109.802907</td>
+      <td>82.457021</td>
+    </tr>
+    <tr>
+      <th>Ar Raqqah</th>
+      <td>7.879289</td>
+      <td>4.689905</td>
+      <td>1.565029</td>
+      <td>1.188662</td>
+      <td>0.874299</td>
+      <td>1.432591</td>
+      <td>2.629462</td>
+      <td>2.128434</td>
+      <td>4.065437</td>
+      <td>6.387455</td>
+      <td>...</td>
+      <td>2.317495</td>
+      <td>0.436470</td>
+      <td>0.125291</td>
+      <td>0.250553</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Dar`a</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>...</td>
+      <td>0.000000</td>
+      <td>0.064731</td>
+      <td>0.258925</td>
+      <td>0.000000</td>
+      <td>0.064732</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Dayr Az Zawr</th>
+      <td>2.140265</td>
+      <td>0.188467</td>
+      <td>0.377624</td>
+      <td>0.696905</td>
+      <td>0.126386</td>
+      <td>0.000000</td>
+      <td>1.073532</td>
+      <td>0.762680</td>
+      <td>0.568986</td>
+      <td>0.251701</td>
+      <td>...</td>
+      <td>1.319054</td>
+      <td>0.314921</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Hamah</th>
+      <td>75.270909</td>
+      <td>21.656590</td>
+      <td>8.800606</td>
+      <td>8.246462</td>
+      <td>9.514644</td>
+      <td>155.613112</td>
+      <td>24.385281</td>
+      <td>12.506246</td>
+      <td>30.970247</td>
+      <td>34.212082</td>
+      <td>...</td>
+      <td>207.689804</td>
+      <td>158.491165</td>
+      <td>259.917182</td>
+      <td>1634.596085</td>
+      <td>1125.643516</td>
+      <td>1105.887974</td>
+      <td>425.235510</td>
+      <td>481.166452</td>
+      <td>1202.593810</td>
+      <td>536.263460</td>
+    </tr>
+    <tr>
+      <th>Hims</th>
+      <td>6.352807</td>
+      <td>0.507980</td>
+      <td>0.381551</td>
+      <td>0.253918</td>
+      <td>2.792863</td>
+      <td>0.317257</td>
+      <td>1.904211</td>
+      <td>0.127070</td>
+      <td>2.094730</td>
+      <td>1.143021</td>
+      <td>...</td>
+      <td>2.923788</td>
+      <td>4.262075</td>
+      <td>4.062676</td>
+      <td>43.459727</td>
+      <td>92.174943</td>
+      <td>23.728053</td>
+      <td>4.188380</td>
+      <td>4.507124</td>
+      <td>74.919512</td>
+      <td>183.112050</td>
+    </tr>
+    <tr>
+      <th>Idlib</th>
+      <td>27.095845</td>
+      <td>15.280434</td>
+      <td>24.910104</td>
+      <td>14.464419</td>
+      <td>12.279044</td>
+      <td>46.664039</td>
+      <td>34.823248</td>
+      <td>10.393510</td>
+      <td>7.070212</td>
+      <td>113.332822</td>
+      <td>...</td>
+      <td>1106.759225</td>
+      <td>74.325848</td>
+      <td>109.792240</td>
+      <td>93.491690</td>
+      <td>115.755690</td>
+      <td>311.652435</td>
+      <td>186.094799</td>
+      <td>131.866447</td>
+      <td>84.258604</td>
+      <td>55.678079</td>
+    </tr>
+    <tr>
+      <th>Lattakia</th>
+      <td>76.985513</td>
+      <td>88.706425</td>
+      <td>54.998993</td>
+      <td>71.267972</td>
+      <td>742.447252</td>
+      <td>65.291268</td>
+      <td>1480.024060</td>
+      <td>668.021859</td>
+      <td>54.883082</td>
+      <td>69.666617</td>
+      <td>...</td>
+      <td>4022.257680</td>
+      <td>968.074040</td>
+      <td>522.129303</td>
+      <td>501.735361</td>
+      <td>426.535367</td>
+      <td>588.007699</td>
+      <td>235.497610</td>
+      <td>351.082340</td>
+      <td>1356.140526</td>
+      <td>1622.487838</td>
+    </tr>
+    <tr>
+      <th>Rif Dimashq</th>
+      <td>1.610330</td>
+      <td>0.193247</td>
+      <td>0.193407</td>
+      <td>0.579396</td>
+      <td>1.417245</td>
+      <td>0.000000</td>
+      <td>0.128872</td>
+      <td>0.000000</td>
+      <td>0.064410</td>
+      <td>0.064413</td>
+      <td>...</td>
+      <td>0.064207</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>Tartus</th>
+      <td>43.160692</td>
+      <td>13.231385</td>
+      <td>8.357694</td>
+      <td>3.166264</td>
+      <td>15.828417</td>
+      <td>6.709051</td>
+      <td>24.934269</td>
+      <td>17.024264</td>
+      <td>12.155203</td>
+      <td>9.684413</td>
+      <td>...</td>
+      <td>8.933851</td>
+      <td>26.756466</td>
+      <td>42.030749</td>
+      <td>118.642899</td>
+      <td>51.382905</td>
+      <td>109.643047</td>
+      <td>26.950682</td>
+      <td>84.320991</td>
+      <td>209.955002</td>
+      <td>376.116621</td>
+    </tr>
+  </tbody>
+</table>
+<p>11 rows × 21 columns</p>
+</div></div></div>
+</div>
+</section>
+<section id="step-4-calculate-cumulative-forest-cover-loss">
+<h2>Step 4. Calculate cumulative forest cover loss<a class="headerlink" href="#step-4-calculate-cumulative-forest-cover-loss" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">matplotlib.ticker</span> <span class="k">as</span> <span class="nn">ticker</span>
+<span class="kn">import</span> <span class="nn">matplotlib.pyplot</span> <span class="k">as</span> <span class="nn">plt</span>
+
+<span class="c1"># Set font family</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">rcParams</span><span class="p">[</span><span class="s1">&#39;font.family&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="s1">&#39;sans-serif&#39;</span>
+
+<span class="c1"># Group data by admin1 and year, and calculate cumulative tree cover loss</span>
+<span class="n">grouped_df</span> <span class="o">=</span> <span class="n">merged_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">([</span><span class="s1">&#39;adm1&#39;</span><span class="p">,</span> <span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">])[</span><span class="s1">&#39;umd_tree_cover_loss__ha&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">()</span>
+<span class="n">grouped_df</span><span class="p">[</span><span class="s1">&#39;cummulative loss&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grouped_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;adm1&#39;</span><span class="p">)[</span><span class="s1">&#39;umd_tree_cover_loss__ha&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">cumsum</span><span class="p">()</span>
+
+<span class="c1"># Convert year column to integers</span>
+<span class="n">grouped_df</span><span class="p">[</span><span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">to_numeric</span><span class="p">(</span><span class="n">grouped_df</span><span class="p">[</span><span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">],</span> <span class="n">errors</span><span class="o">=</span><span class="s1">&#39;coerce&#39;</span><span class="p">,</span> <span class="n">downcast</span><span class="o">=</span><span class="s1">&#39;integer&#39;</span><span class="p">)</span>
+
+<span class="c1"># Replace NaN values with None</span>
+<span class="n">grouped_df</span><span class="p">[</span><span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">grouped_df</span><span class="p">[</span><span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">where</span><span class="p">(</span><span class="n">pd</span><span class="o">.</span><span class="n">notnull</span><span class="p">(</span><span class="n">grouped_df</span><span class="p">[</span><span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">]),</span> <span class="kc">None</span><span class="p">)</span>
+
+<span class="c1"># Create line chart of cumulative tree cover loss over time, by admin1</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">figure</span><span class="p">(</span><span class="n">figsize</span><span class="o">=</span><span class="p">(</span><span class="mi">24</span><span class="p">,</span><span class="mi">12</span><span class="p">))</span>
+<span class="n">ax</span> <span class="o">=</span> <span class="n">sns</span><span class="o">.</span><span class="n">lineplot</span><span class="p">(</span><span class="n">x</span><span class="o">=</span><span class="s1">&#39;umd_tree_cover_loss__year&#39;</span><span class="p">,</span> <span class="n">y</span><span class="o">=</span><span class="s1">&#39;cummulative loss&#39;</span><span class="p">,</span> <span class="n">hue</span><span class="o">=</span><span class="s1">&#39;adm1&#39;</span><span class="p">,</span> <span class="n">data</span><span class="o">=</span><span class="n">grouped_df</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mi">3</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_xlabel</span><span class="p">(</span><span class="s1">&#39;Year&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_ylabel</span><span class="p">(</span><span class="s1">&#39;Cumulative Tree Cover Loss (ha)&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_title</span><span class="p">(</span><span class="s1">&#39;Cumulative Syria Tree Cover Loss from 2000-2021, by Governorate&#39;</span><span class="p">,</span> <span class="n">fontsize</span><span class="o">=</span><span class="mi">24</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">tick_params</span><span class="p">(</span><span class="n">labelsize</span><span class="o">=</span><span class="mi">14</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">legend</span><span class="p">(</span><span class="n">fontsize</span><span class="o">=</span><span class="mi">12</span><span class="p">,</span> <span class="n">title</span><span class="o">=</span><span class="s1">&#39;Governorate&#39;</span><span class="p">,</span> <span class="n">title_fontsize</span><span class="o">=</span><span class="mi">16</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_major_locator</span><span class="p">(</span><span class="n">ticker</span><span class="o">.</span><span class="n">MaxNLocator</span><span class="p">(</span><span class="n">integer</span><span class="o">=</span><span class="kc">True</span><span class="p">))</span>
+
+<span class="c1"># Set background color and grid</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">axis</span><span class="o">=</span><span class="s1">&#39;y&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">set_facecolor</span><span class="p">(</span><span class="s1">&#39;#F2F4F7&#39;</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">grid</span><span class="p">(</span><span class="kc">True</span><span class="p">,</span> <span class="n">which</span><span class="o">=</span><span class="s1">&#39;major&#39;</span><span class="p">,</span> <span class="n">color</span><span class="o">=</span><span class="s1">&#39;w&#39;</span><span class="p">,</span> <span class="n">linestyle</span><span class="o">=</span><span class="s1">&#39;-&#39;</span><span class="p">,</span> <span class="n">linewidth</span><span class="o">=</span><span class="mf">1.5</span><span class="p">)</span>
+<span class="n">ax</span><span class="o">.</span><span class="n">xaxis</span><span class="o">.</span><span class="n">set_tick_params</span><span class="p">(</span><span class="n">width</span><span class="o">=</span><span class="mi">0</span><span class="p">)</span>
+
+<span class="c1"># Save chart as a PNG file</span>
+<span class="n">plt</span><span class="o">.</span><span class="n">savefig</span><span class="p">(</span><span class="s1">&#39;images/syria-tree-loss-chart.png&#39;</span><span class="p">,</span> <span class="n">dpi</span><span class="o">=</span><span class="mi">300</span><span class="p">,</span> <span class="n">bbox_inches</span><span class="o">=</span><span class="s1">&#39;tight&#39;</span><span class="p">)</span>
+
+<span class="n">plt</span><span class="o">.</span><span class="n">show</span><span class="p">()</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<img alt="../../_images/4454f50a5cddb57e3ca63d44d319736bb6ac8afa635394f487930ae7591c4d5d.png" src="../../_images/4454f50a5cddb57e3ca63d44d319736bb6ac8afa635394f487930ae7591c4d5d.png" />
+</div>
+</div>
+</section>
+<section id="step-5-calculate-total-tree-cover-loss-by-administrative-level-1-identify-which-admin1s-account-for-the-greatest-losses-and-then-calculate-their-percent-of-the-national-total">
+<h2>Step 5. Calculate total tree cover loss by administrative level 1, identify which admin1s account for the greatest losses, and then calculate their percent of the national total<a class="headerlink" href="#step-5-calculate-total-tree-cover-loss-by-administrative-level-1-identify-which-admin1s-account-for-the-greatest-losses-and-then-calculate-their-percent-of-the-national-total" title="Permalink to this heading">#</a></h2>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1"># Group data by admin1 and calculate tree cover loss</span>
+<span class="n">total_loss</span> <span class="o">=</span> <span class="nb">round</span> <span class="p">(</span><span class="n">merged_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;adm1&#39;</span><span class="p">)[</span><span class="s1">&#39;umd_tree_cover_loss__ha&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sum</span><span class="p">(),</span><span class="mi">2</span><span class="p">)</span>
+
+<span class="c1"># Calculate percentage of the total tree cover loss for each admin1</span>
+<span class="n">percentage_loss</span> <span class="o">=</span> <span class="n">total_loss</span> <span class="o">/</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="o">*</span> <span class="mi">100</span>
+
+<span class="c1"># Get the admin1 with the highest tree cover loss</span>
+<span class="n">most_loss</span> <span class="o">=</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">idxmax</span><span class="p">()</span>
+<span class="n">percentage_of_total</span> <span class="o">=</span> <span class="n">percentage_loss</span><span class="o">.</span><span class="n">max</span><span class="p">()</span>
+
+<span class="c1"># Get the admin1 with the second highest tree cover loss</span>
+<span class="n">second_most_loss</span> <span class="o">=</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">second_most_loss_adm1</span> <span class="o">=</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">2</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">percentage_of_total_2</span> <span class="o">=</span> <span class="n">percentage_loss</span><span class="p">[</span><span class="n">second_most_loss_adm1</span><span class="p">]</span>
+
+<span class="c1"># Get the admin1 with the third highest tree cover loss (repeat for additional areas)</span>
+<span class="n">third_most_loss</span> <span class="o">=</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">iloc</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">third_most_loss_adm1</span> <span class="o">=</span> <span class="n">total_loss</span><span class="o">.</span><span class="n">nlargest</span><span class="p">(</span><span class="mi">3</span><span class="p">)</span><span class="o">.</span><span class="n">index</span><span class="p">[</span><span class="o">-</span><span class="mi">1</span><span class="p">]</span>
+<span class="n">percentage_of_total_3</span> <span class="o">=</span> <span class="n">percentage_loss</span><span class="p">[</span><span class="n">third_most_loss_adm1</span><span class="p">]</span>
+
+<span class="c1"># Display the results (customize the local name for an admin1 area)</span>
+
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The governorate with the most tree cover loss is </span><span class="si">{</span><span class="n">most_loss</span><span class="si">}</span><span class="s2">, with </span><span class="si">{</span><span class="n">total_loss</span><span class="p">[</span><span class="n">most_loss</span><span class="p">]</span><span class="si">}</span><span class="s2"> hectares lost, which represents </span><span class="si">{</span><span class="n">percentage_of_total</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% of the total loss across all governorates.&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The governorate with the second most tree cover loss is </span><span class="si">{</span><span class="n">second_most_loss_adm1</span><span class="si">}</span><span class="s2">, with </span><span class="si">{</span><span class="n">second_most_loss</span><span class="si">}</span><span class="s2"> hectares lost, which represents </span><span class="si">{</span><span class="n">percentage_of_total_2</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% of the total loss across all governorates.&quot;</span><span class="p">))</span>
+<span class="n">display</span><span class="p">(</span><span class="n">Markdown</span><span class="p">(</span><span class="sa">f</span><span class="s2">&quot;The governorate with the third most tree cover loss is </span><span class="si">{</span><span class="n">third_most_loss_adm1</span><span class="si">}</span><span class="s2">, with </span><span class="si">{</span><span class="n">third_most_loss</span><span class="si">}</span><span class="s2"> hectares lost, which represents </span><span class="si">{</span><span class="n">percentage_of_total_3</span><span class="si">:</span><span class="s2">.2f</span><span class="si">}</span><span class="s2">% of the total loss across all governorates.&quot;</span><span class="p">))</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<p>The governorate with the most tree cover loss is Lattakia, with 14045.48 hectares lost, which represents 52.85% of the total loss across all governorates.</p>
+<p>The governorate with the second most tree cover loss is Hamah, with 7524.2 hectares lost, which represents 28.31% of the total loss across all governorates.</p>
+<p>The governorate with the third most tree cover loss is Idlib, with 2629.7 hectares lost, which represents 9.90% of the total loss across all governorates.</p>
+</div>
+</div>
+<hr class="docutils" />
+<p>NOTE: Most of the code in this workbook was generated using a ChatGPT notebook prepred by the Lab: <a class="reference external" href="https://holly-transport.github.io/coffee_chat/notebooks/CoffeeChat.html">https://holly-transport.github.io/coffee_chat/notebooks/CoffeeChat.html</a></p>
+</section>
+</section>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            name: "python3",
+            path: "./notebooks/syria-forest-cover"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+                </article>
+              
+
+              
+              
+              
+              
+                <footer class="prev-next-footer">
+                  
+<div class="prev-next-area">
+    <a class="left-prev"
+       href="README.html"
+       title="previous page">
+      <i class="fa-solid fa-angle-left"></i>
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">previous</p>
+        <p class="prev-next-title">Tree Cover Loss Analysis</p>
+      </div>
+    </a>
+    <a class="right-next"
+       href="../syria-hsos-survey/README.html"
+       title="next page">
+      <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">Humanitarian Assistance Survey Data</p>
+      </div>
+      <i class="fa-solid fa-angle-right"></i>
+    </a>
+</div>
+                </footer>
+              
+            </div>
+            
+            
+              
+                <div class="bd-sidebar-secondary bd-toc"><div class="sidebar-secondary-items sidebar-secondary__inner">
+
+
+  <div class="sidebar-secondary-item">
+  <div class="page-toc tocsection onthispage">
+    <i class="fa-solid fa-list"></i> Contents
+  </div>
+  <nav class="bd-toc-nav page-toc">
+    <ul class="visible nav section-nav flex-column">
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-1-import-libraries">Step 1. Import Libraries</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-2-prepare-data-from-global-forest-watch">Step 2. Prepare data from Global Forest Watch</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-3-create-pivot-table-to-show-change-in-forest-cover-loss-over-time-by-first-administrative-level">Step 3. Create pivot table to show change in forest cover loss over time, by first administrative level</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-4-calculate-cumulative-forest-cover-loss">Step 4. Calculate cumulative forest cover loss</a></li>
+<li class="toc-h2 nav-item toc-entry"><a class="reference internal nav-link" href="#step-5-calculate-total-tree-cover-loss-by-administrative-level-1-identify-which-admin1s-account-for-the-greatest-losses-and-then-calculate-their-percent-of-the-national-total">Step 5. Calculate total tree cover loss by administrative level 1, identify which admin1s account for the greatest losses, and then calculate their percent of the national total</a></li>
+</ul>
+  </nav></div>
+
+</div></div>
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            
+<div class="bd-footer-content__inner container">
+  
+  <div class="footer-item">
+    
+<p class="component-author">
+By Development Data Group
+</p>
+
+  </div>
+  
+  <div class="footer-item">
+    
+
+  </div>
+  
+  <div class="footer-item">
+    <p class="last-updated">
+  Last updated on Jan 04, 2024.
+  <br/>
+</p>
+  </div>
+  
+  <div class="footer-item">
+    
+<div class="extra_footer">
+  <div>
+    <b>All content (unless otherwise specified) is subject to the <a href="https://raw.githubusercontent.com/worldbank/template/main/LICENSE">World Bank Master Community License Agreement.</a></b>
+</div>
+
+</div>
+  </div>
+  
+</div>
+          </footer>
+        
+
+      </main>
+    </div>
+  </div>
+  
+  <!-- Scripts loaded after <body> so the DOM is not blocked -->
+  <script src="../../_static/scripts/bootstrap.js?digest=bd9e20870c6007c4c509"></script>
+<script src="../../_static/scripts/pydata-sphinx-theme.js?digest=bd9e20870c6007c4c509"></script>
+
+  <footer class="bd-footer">
+  </footer>
+  </body>
+</html>
