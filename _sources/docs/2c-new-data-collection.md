@@ -25,6 +25,8 @@ In addition to existing remote sensing data resources described above, Bank team
 
 > *Fig. 3* GFDRR leads the World Bank’s government capacity building efforts to collect drone imagery for public sector programs. This is the cover of GFDRR's recently published guide on [Small Island Mapping with Unmanned Aerial Vehicles (UAVs)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content).
 
+
+
 ![](images/intro-geolab-drones.png)
 
 > *Fig 4* The [ITS GeoLab](https://geowb.worldbank.org/portal/apps/Cascade/index.html?appid=4818a534d02245179c120b7aa21598b6) supports task teams on drone vendor procurement, image processing, and image storage. 
