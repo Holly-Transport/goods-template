@@ -13,6 +13,12 @@ For example, the [Living Standards Measurement Study (LSMS)](https://www.worldba
 
 > *Fig. 1* The LSMS team regularly produces guidebooks and template survey materials for governments. The above links to gudelines for forestry, energy, and education surveys are clickable and lead to the original materials. 
 
+## Field Survey Technology
+
+[Survey Solutions](https://mysurvey.solutions/en/) is a free software platform developed and maintained by the DEC Development Data Group (DECDG) that supports robust household survey and statistical data colleciton. The platform is used by National Statistical Offices throughout developing countries and in support of World Bank household survey programs, such as the Living Standards Measurement Study (LSMS).
+
+
+
 ## Remote Sensing and Drones
 
 In addition to existing remote sensing data resources described above, Bank teams can task new remote sensing data collection, using a combination of vendors and in-house expertise. DEC's Geospatial Operations Support Team (GOST) can support new satellite imagery tasking and advisory, while the Global Faciltiry for Disaster Risk Reduction (GFDRR) can support new field drone data collection. For both data collection methods, the ITS GeoLab can support imagery storage, processing, and access.
