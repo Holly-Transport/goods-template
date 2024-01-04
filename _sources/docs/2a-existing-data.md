@@ -25,8 +25,4 @@ The [Development Data Partnership](https://datapartnership.org/) supports data s
 
 ![](images/intro-partnership-logos.png)
 
-{figure}
----
-height: 0px
----
-The Development Data Partnership manages ~30 pro-bono and on-demand data sharing agreements with firms on behalf of all World Bank staff. Staff can apply for access to these datasets through the Data Partnership portal: https://datapartnership.org/
+<center> *Fig. 1* The Development Data Partnership manages ~30 pro-bono and on-demand data sharing agreements with firms on behalf of all World Bank staff. Staff can apply for access to these datasets through the Data Partnership portal: https://datapartnership.org/</center>
