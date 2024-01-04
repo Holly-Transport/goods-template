@@ -11,5 +11,6 @@ The World Bank Development Economics Data Group (DECDG) supports National Statis
 ## Making Data Discoverable with AI
 
 Forthcoming. 
-  
+
+# Recommendations
 For this Data Good, the team recommends <insert recomendation(s) for the case country/countries>
