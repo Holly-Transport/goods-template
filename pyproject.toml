@@ -5,13 +5,13 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "datalab"
 dynamic = ["version"]
-description = "An Python exampe package from the World Bank Data Lab"
+description = "An Python package from the World Bank Data Lab"
 readme = { file = "README.md", content-type = "text/markdown" }
 license = { file = "LICENSE" }
 keywords = ["template", "reproducible research"]
 authors = [{ name = "Development Data Group", email = "datalab@worldbank.org" }]
 maintainers = [
-	{ name = "Gabriel Stefanini Vicente", email = "gvicente@worldbank.org" },
+	{ name = "Holly Krambeck", email = "hkrambeck@worldbank.org" },
 ]
 classifiers = [
 	"Programming Language :: Python :: 3",
@@ -31,9 +31,9 @@ dependencies = ["requests>=2.28.1", "pycountry>=22.3.5"]
 notebook = ["notebook>=6.5.2"]
 
 [project.urls]
-"Homepage" = "https://github.com/worldbank/template"
-"Bug Reports" = "https://github.com/worldbank/template/issues"
-"Source" = "https://github.com/worldbank/template"
+"Homepage" = "https://github.com/holly-transport/goods-template"
+"Bug Reports" = "https://github.com/holly-transport/goods-template/issues"
+"Source" = "https://github.com/holly-transport/goods-template"
 
 [tool.setuptools.dynamic]
 version = { attr = "datalab.__version__" }
