@@ -6,14 +6,18 @@ In addition to leveraging existing data sources, the World Bank can support gove
 
 The World Bank is a preminent global advisor on government household survey data collection design and implementation in developing countries.
 
+For example, the [Living Standards Measurement Study (LSMS)](https://www.worldbank.org/en/programs/lsms), housed in the DEC Data Group, is a household survey program that  that helps policymakers improve government services for health, education, economic growth, housing, and utilities. To date, the World Bank has led more than 150 LSMS household survey programs, with results accesisble via the World Bank [Microdata Library](https://microdata.worldbank.org/index.php/catalog/lsms/?page=1&ps=15&repo=lsms). Most importantly, the LSMS team routinely collaborates with the Regions and Practice Groups to conduct custom household surveys that directly support lending and technical assistance operations. 
+
 | [![](images/intro-lsms-forests-b.png)](https://www.worldbank.org/en/programs/lsms/publication/Trees-on-farms-measuring-their-contribution-to-household-welfare) | [![](images/intro-lsms-energy.png)](https://www.worldbank.org/en/programs/lsms/publication/MeasuringEnergyAccess) | [![](images/intro-lsms-education.png)](https://www.worldbank.org/en/programs/lsms/publication/Measuring-household-expenditure-on-education-a-guidebook-for-designing-household-survey-questionnaire) |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-
+> *Fig. 1* The LSMS team regularly produces guidebooks and template survey materials for governments. The above links to gudelines for forestry, energy, and education surveys are clickable and lead to the original materials. 
 
 ## Remote Sensing and Drones
 
 In addition to existing remote sensing data resources described above, Bank teams can task new remote sensing data collection, using a combination of vendors and in-house expertise. DEC's Geospatial Operations Support Team (GOST) can support new satellite imagery tasking, while the Global Faciltiry for Disaster Risk Reduction (GFDRR) can support new field drone data collection. For both data collection methods, the ITS GeoLab can support imagery storage, processing, and access.
+
+
 
 ## Crowdsourcing
 
