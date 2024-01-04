@@ -4,4 +4,14 @@ The World Bank DEC and Digital Development teams can support training government
 
 <insert high-level information about the service, here. Combination of digitization and AI support from DECDG and cloud procurement from DD GP>
 
+
+
+```
+<video src="images/digitize-data-ivory-coast.mov" width="320" height="240" controls></video>
+```
+
+
+
+
+
 For this Data Good, the team recommends <insert recomendation(s) for the case country/countries>
