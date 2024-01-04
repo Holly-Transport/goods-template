@@ -6,8 +6,8 @@ In addition to leveraging existing data sources, the World Bank can support gove
 
 The World Bank is a preminent global advisor on government household survey data collection design and implementation in developing countries.
 
-| [![](images/intro-lsms-forests-b.png)](https://www.worldbank.org/en/programs/lsms/publication/Trees-on-farms-measuring-their-contribution-to-household-welfare) | [![](images/intro-lsms-energy.png)](https://www.worldbank.org/en/programs/lsms/publication/MeasuringEnergyAccess) | [![](images/intro-lsms-education.png)]() |
-| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
+| [![](images/intro-lsms-forests-b.png)](https://www.worldbank.org/en/programs/lsms/publication/Trees-on-farms-measuring-their-contribution-to-household-welfare) | [![](images/intro-lsms-energy.png)](https://www.worldbank.org/en/programs/lsms/publication/MeasuringEnergyAccess) | [![](images/intro-lsms-education.png)](https://www.worldbank.org/en/programs/lsms/publication/Measuring-household-expenditure-on-education-a-guidebook-for-designing-household-survey-questionnaire) |
+| --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
 
 
