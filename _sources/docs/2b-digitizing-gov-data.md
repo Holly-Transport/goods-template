@@ -10,11 +10,9 @@ The World Bank Development Economics Data Group (DECDG) supports National Statis
 
 > In this video, the DEC Data Group (DECDG) team works with the Ivory Coast National Statistical Office on digitizing business statistics surveys and setting up a system for electronic data collection moving forward. 
 
-
-
 ## Making Data Discoverable with AI
 
-The World Bank Development Economics Data Group (DECDG) is leading Bank efforts to build flexible, open source tools that government counterparts can use to tag and search hundreds of thousands of government documents and records. The leading product, NLP4Dev, 
+The World Bank Development Economics Data Group (DECDG) is leading Bank efforts to build flexible, open source tools that government counterparts can use to tag and search hundreds of thousands of government documents and records. The leading product, [NLP4Dev](https://www.nlp4dev.org/), supports out-of-the-box advanced semantic search, with a code package that can be implemented and maintained by locally-based developers./
 
 
 
@@ -26,4 +24,4 @@ The World Bank Development Economics Data Group (DECDG) is leading Bank efforts 
 
 # Recommendations
 
-)For this Data Good, the team recommends <insert recomendation(s) for the case country/countries>
+For this Data Good, the team recommends <insert recomendation(s) for the case country/countries>
