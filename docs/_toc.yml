@@ -5,7 +5,7 @@ parts:
   - caption: Introduction to Data Goods
     chapters:
       - file: docs/1-intro-to-data-goods.md
-  - caption: Foundational Datasets
+  - caption: Datasets
     chapters:
       - file: docs/2-foundational-data.md
         sections:
