@@ -4,13 +4,15 @@
 
 Data Goods packages include:
 
-1. **Foundational Datasets**. Foundational Datasets comprise *all* datasets used to prepare the Data Goods. To support replication and re-use of the Data Goods, the documetation includes a description of each datasource, including data type, update frequency, access links (including to the World Bank’s data catalogue, the [Development Data Hub](https://datacatalog.worldbank.org/home)) and contact information. This section also includes information about how to support government data digitization, as well as how to collect new field data.
+1. **Datasets**. Foundational Datasets comprise *all* datasets used to prepare the Data Goods. To support replication and re-use of the Data Goods, the documetation includes a description of each datasource, including data type, update frequency, access links (including to the World Bank’s data catalogue, the [Development Data Hub](https://datacatalog.worldbank.org/home)) and contact information. This section also includes information about how to support government data digitization, as well as how to collect new field data.
 
 2. **Reusable Data Products**. These are analytical products derived from the Foundational Datasets, which can be further used to generate indicators and insights. All data products include documentation, links to original data sources (and/or information on how to access them), and a description of their limitations. Reference resources are also cited, where relevant. In the documentation, each Data Product has it’s own “chapter”, generated through use of a Jupyter notebook.
 
 3. **Insights and Indicators**. Each Data Goods package may also include additional analytical work, such as dynamic maps, data visualizaations, and/or sample indicators. Indicators can be derived from a combination of **Foundational Datasets** and **Reusable Data Products**. By combining these two inputs, teams are empowered to develop a large array of indicators to meet their project needs. Indicators can be presented side-by-side in an Excel workbook – a format that is generally accessible to the widest audience. Because all indicators are based on the same underlying data, they are, by design, comparable with each other, across geographies and across time.
 
-4. **Data Lab Team**. For each project, the [World Bank Data Lab](https://wbdatalab.org/) recruits colleagues from throughout our organization, pooling our collective great talents in support of our lending and technical assistance operations. Data Goods documentation includes a list and contact information for the unique team that prepared the Goods.
+4. **Training and Dissemination**. Each Data Good is packaged as a readily translated and distributed web book and includes guidance for further training and capcity building.  
+
+5. **Data Lab Team**. For each project, the [World Bank Data Lab](https://wbdatalab.org/) recruits colleagues from throughout our organization, pooling our collective great talents in support of our lending and technical assistance operations. Data Goods documentation includes a list and contact information for the unique team that prepared the Goods.
 
 ## How Data Goods are Managed
 
