@@ -17,7 +17,10 @@ Web books can be auto-translated into more than 130 languages. Click the followi
 
 Web books can be presented as websites or downloaded as pdfs, and all readers can suggest edits or raise issues using the web book navigation bar, creating a new level of interaction with recipients of World Bank analytical work:
 
-![](images/intro-nav.png)
+| <span style="color:white">xxxxxxx</span> | <span style="color:white">xxxxxxxx</span> | ![](images/intro-nav.png) | <span style="color:white">xxxxxxxx</span> | <span style="color:white">xxxxxxxx</span> |
+| ---------------------------------------- | ----------------------------------------- | ------------------------- | ----------------------------------------- | ----------------------------------------- |
+
+
 
 Web books do not require any funding for hosting, and they can be freely duplicated, updated, or added to by the community. Further, all usage can be freely monitored in real time, providing a reliable indicator of utility. 
 
