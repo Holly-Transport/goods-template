@@ -36,6 +36,7 @@ parts:
     chapters:
       - file: docs/4-sample-insights-and-ind.md
   - caption: Training and Dissemination
+    chapters:
       - file: docs/5-training-and-dissem.md
   - caption: Acknowledgements
     chapters:
