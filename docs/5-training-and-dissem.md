@@ -1,4 +1,4 @@
-# Counterpart Training and Dissemination
+# Training and Dissemination: Examples
 
 ## Package Dissemination
 
