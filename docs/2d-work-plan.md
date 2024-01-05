@@ -1,4 +1,4 @@
-# PROPOSAL: Data Collection Work Plan
+# Foundational Data: Proposal
 
 ## Existing Data
 

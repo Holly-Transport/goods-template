@@ -12,6 +12,7 @@ parts:
         - file: docs/2a-existing-data.md
         - file: docs/2b-digitizing-gov-data.md
         - file: docs/2c-new-data-collection.md
+      - file: docs/2d-work-plan
   - caption: Reusable Data Products
     chapters:
       - file: docs/3-reusable-data-products.md
@@ -29,7 +30,8 @@ parts:
         - file: notebooks/syria-forest-cover/README
           sections:
             - file: notebooks/syria-forest-cover/syria_forest.ipynb
-      - file: notebooks/syria-hsos-survey/README
+        - file: notebooks/syria-hsos-survey/README
+      - file: docs/3a-data-products-proposal.md
   - caption: Sample Insights and Indicators
     chapters:
       - file: docs/4-sample-insights-and-ind.md
