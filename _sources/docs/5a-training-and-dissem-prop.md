@@ -1,4 +1,4 @@
-# Training Proposal
+# Training Work Plan Example
 
 
 
