@@ -9,6 +9,10 @@ All Data Goods, by default, are made freely available via web books-- in the sam
 
 Web books do not require any funding for hosting, and they can be freely duplicated, updated, or added to by the community. Further, all usage can be freely monitored in real time, providing a reliable indicator of utility. 
 
+## Custom Training
+
+
+
 ## DEC Global Institute
 
 DEC Global Institute......
