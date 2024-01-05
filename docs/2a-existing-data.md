@@ -2,10 +2,10 @@
 
 Sifting through hundreds of resources to identify existing data that may support a project can be overwhelming. As part of every Data Good, the Lab team prepares curated data resources that gives teams a laser focus on those resources that will have the most impact in their work. 
 
-- [Foundational Datasets Table for Data Goods](2a-existing-data.md/#foundational-datasets-table) - All datasets needed to support use and re-use of the Data Good
-- [Strategic Briefs](#strategic-brief) - Briefs, which are prepared on demand for specific projects, feature more comprehensive list of datasources, including those that are not necessarily used to support Data Goods but may nevertheless be useful in support of the broader project aims.
-- [Development Data Partnership](#development-data-partnership) - The Data Lab manages ~30 pro-bono data sharing agreements with tech companies on behalf of all World Bank staff. 
-- [Data Management](#data-management) - For open datasets, the Data Lab works with the DECDG Development Data Hub team to create a 'collection' in the [World Bank Data Catalogue](https://datacatalog.worldbank.org/int/home) to ensure all datasets are readily accessible by the project team, government counterparts, and third parties.
+- **Foundational Datasets Table for Data Goods** - All datasets needed to support use and re-use of the Data Good
+- Strategic Briefs - Briefs, which are prepared on demand for specific projects, feature more comprehensive list of datasources, including those that are not necessarily used to support Data Goods but may nevertheless be useful in support of the broader project aims.
+- **Development Data Partnership** - The Data Lab manages ~30 pro-bono data sharing agreements with tech companies on behalf of all World Bank staff. 
+- **Data Management** - For open datasets, the Data Lab works with the DECDG Development Data Hub team to create a 'collection' in the [World Bank Data Catalogue](https://datacatalog.worldbank.org/int/home) to ensure all datasets are readily accessible by the project team, government counterparts, and third parties.
 
 ## Foundational Datasets Table
 
