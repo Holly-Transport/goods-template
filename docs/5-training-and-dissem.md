@@ -7,4 +7,9 @@
 >
 > > :Button label=NPM, url=https://npmjs.org
 
+
+[Link button](https://just-the-docs.com){: .btn }
+
+
 ## DEC Global Institute
+
