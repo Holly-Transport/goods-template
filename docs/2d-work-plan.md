@@ -12,13 +12,52 @@ The Clean Water and Sanitation Global Challenge Program  seeks to strengthen wat
 
 > **Pillar 4: Enhancing Water Security in FCV for peace and stability.** The GCP will support data activities indicated above in FCV contexts. In addition, the GCP will leverage relevant data partnerships (e.g., Armed Conflict Location & Event Data Project (ACLED) to measure and monitor conflict risk to safe water supply and access.
 
+The Global Challenge Approach Paper also presents key indicators for monitoring:
+
+> ![](images/water-table.png)
+
+
+
 ## Existing Data
 
-As a first step, the team will curate a hosted collection of relevant datasets:
+As a first step, the team will explore options to curate a hosted collection of relevant datasets, including but not limited to:
+
+* Spatial population and demographics
+
+* Spatial distribution of wealth
+
+* Location of surface natural freshwater resources and spatial trends in their increase/descrease
+
+* Location of flood plains /  risk zones
+
+* Historical spatial statistics for drought and rainfall
+
+* Location of agriculture facilities
+
+* Location of basic infrastructure, including roads and buildings, and points of interest, such as schools and health facilities
+
+* Disease surveillence data for illnesses associated with contaminated water and poor sanitation (e.g., cholera, diarrhoea, dysentery, hepatitis A, typhoid, and polio)
+
+* Spatial and temporal inventory of international development organization investments in WASH facilities
+
+* WASH consumables purchase data (e.g., from Unilever)
+
+* Previously conducted household survey results (e.g., LSMS), formatted for ease of access and use
+
+* Conflict event data (geospatial)
+
+* Aggregated news and media mentions of poor WASH conditions
+
+  
 
 ## Digitizing Government Data
 
+As a pilot, the team can work with a specific counry client to aggregate and digitize existing paper records or tag and format existing digital records. These would then be hosted on a server (location depending on local data regulations) and made easily searchable and discoverable through an open-source AI-based document and data discovery platform developed by the World Bank. 
+
 ## New Data Collection
+
+* The **Living Standards Measurement Study (LSMS)** is launching a new program on longitudinal high-frequency multi-topic household surveys, known as Resilient Futures. Through coordination with the Water Global Practice, the survey questions can be tailored to ensure they support measurement of access to safe water supply and sanitation, irrigation practices, and sustainable water resource management practices. 
+* The team can use remote sensing techniques to monitor 
 
 
 
