@@ -1,4 +1,4 @@
-# Training and Dissemination: Examples
+# Training and Dissemination
 
 ## Data Goods Package Dissemination
 
