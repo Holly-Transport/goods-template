@@ -2,6 +2,12 @@
 
 In addition to leveraging existing data sources, the World Bank can support government training and implementation assistance for new data collection -- through household surveus, remote sensing, and crowdsourcing methods.
 
+* [Household Surveys](#household-surveys)
+* [Field Survey Technology](#field-survey-technology)
+* [Remote Sensing and Drones](#remote-sensing-and-drones)
+* [Crowdsourcing](#crowdsourcing)
+* [Data Management](#data-management)
+
 ## Household Surveys
 
 The World Bank is a preminent global advisor on government household survey data collection design and implementation in developing countries.
@@ -57,6 +63,3 @@ For newly collected data, the DEC Development Data Hub team can provide support 
 
 > *Fig. 7*  The DEC Data Group’s Development Data Hub team has extensive experience designing and implementing data acquisition, archiving, and dissemination policies and governance. For more information, see: [Development Data Hub](https://datacatalog.worldbank.org/int/getting-started)
 
-# Recommendations
-
-For this Data Good, the team recommends <insert recomendation(s) for the case country/countries>
