@@ -1,4 +1,4 @@
-# Sample Insights and Indicators
+# Insights and Indicators
 
 This section shows how Foundational Datasets and Reusable Data Products can be combined to generate new insights and indicators.
 

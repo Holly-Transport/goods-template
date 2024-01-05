@@ -32,7 +32,7 @@ parts:
             - file: notebooks/syria-forest-cover/syria_forest.ipynb
         - file: notebooks/syria-hsos-survey/README
       - file: docs/3a-data-products-proposal.md
-  - caption: Sample Insights and Indicators
+  - caption: Insights and Indicators
     chapters:
       - file: docs/4-sample-insights-and-ind.md
   - caption: Training and Dissemination
