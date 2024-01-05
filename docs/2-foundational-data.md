@@ -8,7 +8,7 @@ In addition to these existing datasets, advisory is provided on digtizing data m
 
 The following chapters provide additional detail about these services:
 
-- [Existing Data](2a-foundational-data.md)
+- [Existing Data](2a-existing-data.md)
 - [Digitizing Government Data](2b-digitizing-gov-data.md)
 - [New Data Collection](2c-new-data-collection.md)
 
