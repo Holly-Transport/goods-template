@@ -1,6 +1,4 @@
-# Training and Dissemination: Proposal
-
-## Data Goods Package Dissemination
+# Training Proposal
 
 
 
