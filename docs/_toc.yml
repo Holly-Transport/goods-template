@@ -27,6 +27,10 @@ parts:
         - file: notebooks/turkiye-business-activity-trends/README
           sections:
             - file: notebooks/turkiye-business-activity-trends/01-business-activity-trends.ipynb
+        - file: notebooks/turkiye-mobility/README
+          sections:
+            - file: notebooks/turkiye-mobility/activity.ipynb
+            - file: notebooks/turkiye-mobility/visits.ipynb
         - file: notebooks/syria-forest-cover/README
           sections:
             - file: notebooks/syria-forest-cover/syria_forest.ipynb
