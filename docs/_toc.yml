@@ -35,9 +35,11 @@ parts:
   - caption: Sample Insights and Indicators
     chapters:
       - file: docs/4-sample-insights-and-ind.md
+  - caption: Training and Dissemination
+      - file: docs/5-training-and-dissem.md
   - caption: Acknowledgements
     chapters:
-      - file: docs/5-team.md
+      - file: docs/6-team.md
   - caption: Additional Resources
     chapters:
       - url: https://datapartnership.org
