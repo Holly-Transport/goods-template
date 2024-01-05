@@ -15,20 +15,23 @@ parts:
   - caption: Reusable Data Products
     chapters:
       - file: docs/3-reusable-data-products.md
-      - file: notebooks/gaza-nighttime-lights/README
-        sections:
+      - caption: Examples
+        chapters:
+        - file: notebooks/gaza-nighttime-lights/README
+          sections:
           - file: notebooks/gaza-nighttime-lights/nighttime-lights.ipynb
           - file: notebooks/gaza-nighttime-lights/nighttime-lights-in-jordan.ipynb
-      - file: notebooks/gaza-damage-assessment/README
-        sections:
+        - file: notebooks/gaza-damage-assessment/README
+          sections:
           - file: notebooks/gaza-damage-assessment/damage-assessment.ipynb
-      - file: notebooks/turkiye-business-activity-trends/README
-        sections:
+        - file: notebooks/turkiye-business-activity-trends/README
+          sections:
           - file: notebooks/turkiye-business-activity-trends/01-business-activity-trends.ipynb
-      - file: notebooks/syria-forest-cover/README
-        sections:
+        - file: notebooks/syria-forest-cover/README
+          sections:
           - file: notebooks/syria-forest-cover/syria_forest.ipynb
-      - file: notebooks/syria-hsos-survey/README
+        - file: notebooks/syria-hsos-survey/README
+      - file: docs/3-reusable-data-products.md
   - caption: Sample Insights and Indicators
     chapters:
       - file: docs/4-sample-insights-and-ind.md
