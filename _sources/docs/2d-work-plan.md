@@ -1,4 +1,4 @@
-# Data Work Plan Example
+# Datasets: Work Plan Example
 
 The Clean Water and Sanitation Global Challenge Program  seeks to strengthen water security and increase access to safe water supply and sanitation through systems change and investing in the scale-up of more sustainable water management and disaster risk reduction solutions. To this end, the Approach Paper annex presents data requirements to measure outcomes in the four GCP Pillars. Following is an excerpt from the paper:
 

@@ -1,4 +1,4 @@
-# Data: Introduction
+# Datasets: Introduction
 
 Each Data Goods project begins with a survey of existing data resources that can be leveraged to support a project or program. In addition to these existing datasets, advisory is provided on digtizing data may exist in paper records and making existing government data records more discoverable through AI. Also, methods for new data collection, including household surveys, remote sensing, and crowdsourcing are proposed. 
 
