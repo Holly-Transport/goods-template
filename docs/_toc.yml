@@ -38,6 +38,7 @@ parts:
   - caption: Training and Dissemination
     chapters:
       - file: docs/5-training-and-dissem.md
+      - file: docs/5a-training-and-dissem-prop.md
   - caption: Acknowledgements
     chapters:
       - file: docs/6-team.md
