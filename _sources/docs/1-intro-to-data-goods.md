@@ -1,22 +1,30 @@
 # Introduction to Data Goods
 
-**Data Goods** are comprised of data, reproducible methods (code), documentation, and sample insights. Unlike a traditional data analysis, which results in a single-use report or visualization, Data Goods are designed to be customized, reused, and updated, thereby building the capacity of the World Bank and partner organizations to quickly and effectively deliver complex data science solutions to pressing global challenges.
+**Data Goods** are comprised of data, reproducible methods (code), sample insights, and training guidance. Unlike a traditional data analysis, which results in a single-use report or visualization, Data Goods are designed to be customized, reused, and updated, thereby building the capacity of the World Bank and partner organizations to quickly and effectively deliver complex data science solutions to pressing global challenges.
 
 Data Goods packages include:
 
-1. **Datasets**. Foundational Datasets comprise *all* datasets used to prepare the Data Goods. To support replication and re-use of the Data Goods, the documetation includes a description of each datasource, including data type, update frequency, access links (including to the World Bank’s data catalogue, the [Development Data Hub](https://datacatalog.worldbank.org/home)) and contact information. This section also includes information about how to support government data digitization, as well as how to collect new field data.
+1. **Datasets**. Data Goods provide guidance on how to access the data underpinning all package data products, indicators, and insights. This transparency in data sources supports reproducibility and, critically, re-use in new countries, times, and contexts. The Datasets section includes four parts:
 
-2. **Reusable Data Products**. These are analytical products derived from the Foundational Datasets, which can be further used to generate indicators and insights. All data products include documentation, links to original data sources (and/or information on how to access them), and a description of their limitations. Reference resources are also cited, where relevant. In the documentation, each Data Product has it’s own “chapter”, generated through use of a Jupyter notebook.
+   > (a) <u>Existing Data</u>. Each Data Goods starts with a curation of datasets -- public and private -- that will support project objectives. The team prepares this curated list as a table, which includes data type, update frequency, access links, and contact information.
 
-3. **Insights and Indicators**. Each Data Goods package may also include additional analytical work, such as dynamic maps, data visualizaations, and/or sample indicators. Indicators can be derived from a combination of **Foundational Datasets** and **Reusable Data Products**. By combining these two inputs, teams are empowered to develop a large array of indicators to meet their project needs. Indicators can be presented side-by-side in an Excel workbook – a format that is generally accessible to the widest audience. Because all indicators are based on the same underlying data, they are, by design, comparable with each other, across geographies and across time.
+   > (b) <u>Digitizing Government Data</u>. Where needed, a Data Good may also include guidance on government data digitalization and/or management, using AI methods to make disaggregated government records readily searchable. 
+
+   > (c) <u>New Data Collection</u>. A Data Good may also incude a data collection plan (and implementation of that plan, as needed) that includes some combination of household survey data collection, remote sensing (including drones), and crowdsourcing. The Data Good may also include guidance (and again, implementation of that guidance) on processing, storage, and cataloguing of all collected data. 
+
+   > (d) <u>World Bank Data Catalogue</u>. xxx
+
+2. **Reusable Data Products**. These are analytical products derived from the Datasets, which can be further used to generate indicators and insights. All data products include original code, documentation, links to original data sources (and/or information on how to access them), and a description of their limitations. Reference resources are also cited, where relevant.
+
+3. **Insights and Indicators**. Each Data Goods package may also include additional analytical work, such as dynamic maps, data visualizaations, and/or sample indicators. Indicators can be derived from a combination of **Datasets** and **Reusable Data Products**. By combining these two inputs, teams are empowered to develop a large array of indicators to meet their project needs.
 
 4. **Training and Dissemination**. Each Data Good is packaged as a readily translated and distributed web book and includes guidance for further training and capcity building.  
 
-5. **Data Lab Team**. For each project, the [World Bank Data Lab](https://wbdatalab.org/) recruits colleagues from throughout our organization, pooling our collective great talents in support of our lending and technical assistance operations. Data Goods documentation includes a list and contact information for the unique team that prepared the Goods.
+5. **Data Lab Team**. For each project, the [World Bank Data Lab](https://wbdatalab.org/) recruits colleagues from throughout the World Bank, pooling our collective data talents in support of our lending and technical assistance operations. Data Goods packages include names and contact information for the unique teams that prepared the Goods.
 
 ## How Data Goods are Managed
 
-1. **Dynamic, Web-Hosted Documentation**. Unless specified otherwise, all code and documentation used to produce the Data Goods is hosted in a project GitHub repository, to facilitate reuse for future updates and projects, as well as to support collaboration and capacity building activities.
+1. **Dynamic, Web-Hosted Documentation**. Unless specified otherwise, all code and documentation used to produce the Data Goods is hosted in a project GitHub repository to facilitate reuse for future updates and projects, as well as to support collaboration and capacity building activities.
 
 2. **Data Catalogue**. Where possible, all datasets used in the production of Data Goods are added as entries to the World Bank’s [Development Data Hub](https://datacatalog.worldbank.org/home), where they are tagged with meta data, license attributes, and access information.
 
