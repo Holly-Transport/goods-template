@@ -1,8 +1,8 @@
 # Insights, Indicators, and Data Sources
 
-This section shows how Curated Datasets and Reusable Data Products can be combined to generate new insights and indicators. The section also incldues information about how analytical reproducibility is acheived through presentaiton of underlying datasets. 
+This section shows how Curated Datasets and Reusable Data Products can be combined to generate new insights and indicators. The section also incldues information about how analytical reproducibility is acheived through presentaiton of underlying datasets. The section is orgnaized as follows:
 
-- Insights and Indiators. 
+- Insights and Indiators
 - Data Goods Datasets Table
 - World Bank Data Catalogue Collection
 
