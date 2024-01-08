@@ -1,4 +1,4 @@
-# Insights, Indicators, and Data Sources
+# Insights, Indicators, and Data Sources: Introduction
 
 This section shows how Curated Datasets and Reusable Data Products can be combined to generate new insights and indicators. The section also incldues information about how analytical reproducibility is acheived through presentaiton of underlying datasets. The section is orgnaized as follows:
 
