@@ -65,6 +65,6 @@ Another example -- below is a screen capture from an AWS Mechanical Turk crowdso
 
 ## Data Management
 
-For newly collected data, the DEC Development Data Hub team can provide support for formatting, tagging, and hosting collected datasets, as well as advisory on data acquisition, archiving, and dissemination policies and governance. For more information, see: [Development Data Hub](https://datacatalog.worldbank.org/int/getting-started)
+For newly collected data, the Lab coordinates with the DEC Development Data Hub team, which can provide support for formatting, tagging, and hosting collected datasets, as well as advisory on data acquisition, archiving, and dissemination policies and governance. For more information, see: [Development Data Hub](https://datacatalog.worldbank.org/int/getting-started)
 
 ![](images/intro-data-manage.png)
