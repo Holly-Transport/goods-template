@@ -12,7 +12,7 @@ This section shows how Curated Datasets and Reusable Data Products can be combin
 
 Datasets and Data Products can be combined to generate new kinds of insights and indicators. FOr example, the following comparable indicators were developed by the Lab to support the Turkiye Country Economist in analyzing earthquake impacts on the economy.
 
-![image-20240108114934316](/Users/dragon/Documents/GitHub/goods-template/docs/images/intro-indictors.png)
+![](images/intro-indictors.png)
 
 ## Data Goods Datasets Table
 
