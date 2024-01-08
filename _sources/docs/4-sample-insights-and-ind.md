@@ -28,4 +28,4 @@ For datasets created by the Bank and/or licesned by the Bank, the Data Lab works
 
 For example, the Data Lab worked with the DEC Data Group (DECDG) Development Data Hub team to create a special [Syria Economic Monitor collection](https://datacatalog.worldbank.org/int/getting-started) in the World Bank Data Catalogue to ensure all project data can be easily accessed by the team and third parties. Similar collections can be made for other Data Goods packages, to ensure all data are hosted and readily accessible from one place.
 
-![](images/intro-hub-collection-syria.png)
+> ![](images/intro-hub-collection-syria.png)
