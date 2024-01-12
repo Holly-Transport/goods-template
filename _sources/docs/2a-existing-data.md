@@ -2,16 +2,11 @@
 
 Sifting through hundreds of resources to identify existing data that may support a project can be overwhelming. As part of every Data Good, the Lab team prepares curated data resources that gives teams a laser focus on those resources that will have the most impact in their work. 
 
-- **Development Data Partnership** - The Data Lab manages ~30 pro-bono data sharing agreements with tech companies on behalf of all World Bank staff. 
 - **Dataset Curation** - The Lab pools together and categorizes existsing datasets -- public and private -- that could support the project and, critically, provides direct links for accessing / applying for these resources. 
 
-## Development Data Partnership
+- **Development Data Partnership** - The Data Lab manages ~30 pro-bono data sharing agreements with tech companies on behalf of all World Bank staff. 
 
-The [Development Data Partnership](https://datapartnership.org/) supports data sharing and data science collaboration between international organizations and companies. Through the Partnership, World Bank teams can apply to access ~30 pro-bono data sharing agreements signed with tech companies on behalf of all staff: https://datapartnership.org/. To date, the Partnesrhip program has supported more than 300 projects. 
-
-![](images/intro-partnership-logos.png)
-
-
+  
 
 ## Dataset Curation
 
@@ -21,3 +16,8 @@ The Lab prepares curated datasets that include data used to support production o
 
 
 
+## Development Data Partnership
+
+The [Development Data Partnership](https://datapartnership.org/) supports data sharing and data science collaboration between international organizations and companies. Through the Partnership, World Bank teams can apply to access ~30 pro-bono data sharing agreements signed with tech companies on behalf of all staff: https://datapartnership.org/. To date, the Partnesrhip program has supported more than 300 projects. 
+
+![](images/intro-partnership-logos.png)
