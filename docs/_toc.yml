@@ -7,33 +7,33 @@ parts:
       - file: docs/1-intro-to-data-goods.md
   - caption: Datasets
     chapters:
-      - file: docs/2-foundational-data.md
+      - file: docs/2-data.md
         sections:
-        - file: docs/2a-existing-data.md
-        - file: docs/2b-digitizing-gov-data.md
-        - file: docs/2c-new-data-collection.md
+          - file: docs/2a-existing-data.md
+          - file: docs/2b-digitizing-gov-data.md
+          - file: docs/2c-new-data-collection.md
   - caption: Reusable Data Products
     chapters:
       - file: docs/3-reusable-data-products.md
         sections:
-        - file: notebooks/gaza-nighttime-lights/README
-          sections:
-            - file: notebooks/gaza-nighttime-lights/nighttime-lights.ipynb
-            - file: notebooks/gaza-nighttime-lights/nighttime-lights-in-jordan.ipynb
-        - file: notebooks/gaza-damage-assessment/README
-          sections:
-            - file: notebooks/gaza-damage-assessment/damage-assessment.ipynb
-        - file: notebooks/turkiye-business-activity-trends/README
-          sections:
-            - file: notebooks/turkiye-business-activity-trends/01-business-activity-trends.ipynb
-        - file: notebooks/turkiye-mobility/README
-          sections:
-            - file: notebooks/turkiye-mobility/activity.ipynb
-            - file: notebooks/turkiye-mobility/visits.ipynb
-        - file: notebooks/syria-forest-cover/README
-          sections:
-            - file: notebooks/syria-forest-cover/syria_forest.ipynb
-        - file: notebooks/syria-hsos-survey/README
+          - file: notebooks/gaza-nighttime-lights/README
+            sections:
+              - file: notebooks/gaza-nighttime-lights/nighttime-lights.ipynb
+              - file: notebooks/gaza-nighttime-lights/nighttime-lights-in-jordan.ipynb
+          - file: notebooks/gaza-damage-assessment/README
+            sections:
+              - file: notebooks/gaza-damage-assessment/damage-assessment.ipynb
+          - file: notebooks/turkiye-business-activity-trends/README
+            sections:
+              - file: notebooks/turkiye-business-activity-trends/01-business-activity-trends.ipynb
+          - file: notebooks/turkiye-mobility/README
+            sections:
+              - file: notebooks/turkiye-mobility/activity.ipynb
+              - file: notebooks/turkiye-mobility/visits.ipynb
+          - file: notebooks/syria-forest-cover/README
+            sections:
+              - file: notebooks/syria-forest-cover/syria_forest.ipynb
+          - file: notebooks/syria-hsos-survey/README
   - caption: Insights and Indicators
     chapters:
       - file: docs/4-sample-insights-and-ind.md
