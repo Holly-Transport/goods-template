@@ -17,7 +17,7 @@ Through the GCP process, the Water GP has clearly articulated its priorities and
 
 ## Proposed Outputs
 
-#### Curated and Hosted Global Datasets and Methods for Measuring Climate and Conflict Risk to Safe Water Supply and Sanitation.
+#### Contributions to World Bank Water Data Portal, with Focus on Measuring Climate and Conflict Risk to Safe Water Supply and Sanitation.
 
 Curation of global public datasets, hosted on the World Bank’s open data catalogue (~14+ million users per month), that pulls together and harmonizes derived datasets from: WB-led global survey programs (e.g., [Living Standards Measurement Study](https://microdata.worldbank.org/index.php/catalog/lsms/?page=1&ps=15&repo=lsms), Poverty), geospatial data (e.g., flood records), and (for internal staff use) data partnerships (e.g., ACLED, JBA) to measure and monitor climate and conflict risk to safe water supply and access, especially in FCVs. 
 
