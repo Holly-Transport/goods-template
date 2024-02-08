@@ -19,7 +19,7 @@ The LSMS team also regularly produces guidebooks and template survey materials f
 | [![](images/intro-lsms-forests-b.png)](https://www.worldbank.org/en/programs/lsms/publication/Trees-on-farms-measuring-their-contribution-to-household-welfare) | [![](images/intro-lsms-energy.png)](https://www.worldbank.org/en/programs/lsms/publication/MeasuringEnergyAccess) | [![](images/intro-lsms-education.png)](https://www.worldbank.org/en/programs/lsms/publication/Measuring-household-expenditure-on-education-a-guidebook-for-designing-household-survey-questionnaire) |
 | --------------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 
-```{figure} images/favicon.ico
+```{figure}
 ---
 height: 0px
 ---
@@ -36,7 +36,7 @@ In addition to existing remote sensing data resources described above, Bank team
 
 For example, the DEC Geospatial Operations Support Team (GOST) commissioned the industry-standard introductory resource for using satellite imagery in international development work – [The State of Satellites](https://landscape.satsummit.io/).
 
-```{figure} images/intro-gost-sat.png
+```{figure}
 ---
 ---
 The state of satellites
@@ -45,9 +45,9 @@ The state of satellites
 GFDRR leads the World Bank’s government capacity building efforts to collect drone imagery for public sector programs. For example, following is GFDRR's recently published guide on [Small Island Mapping with Unmanned Aerial Vehicles (UAVs)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content).
 
 | <span style="color:white">xxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxx</span> | [![](images/intro-gfdrr-drones.png)](https://openknowledge.worldbank.org/server/api/core/bitstreams/d58af8a7-ee74-5567-9fa3-4aaf5f9050e8/content) | <span style="color:white">xxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxx</span> |
-| --------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------ | ---------------------------------------------- | ---------------------------------------------- |
+| --------------------------------------------- | ---------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------- | ---------------------------------------------- |
 
-```{figure} images/favicon.ico
+```{figure}
 ---
 ---
 Small Island Mapping with Unmanned Aerial Vehicles (UAVs)
@@ -55,7 +55,7 @@ Small Island Mapping with Unmanned Aerial Vehicles (UAVs)
 
 Finally, the [ITS GeoLab](https://geowb.worldbank.org/portal/apps/Cascade/index.html?appid=4818a534d02245179c120b7aa21598b6) supports task teams on drone vendor procurement, image processing, and image storage.
 
-```{figure} images/intro-geolab-drones.png
+```{figure}
 ---
 ---
 Drone Operations
@@ -67,7 +67,7 @@ Crowdsourcing can be an economical and quick means to collect data across a larg
 
 For example, [Laomap.org](https://www.laomap.org/), is a web platform created by WB Data Lab Task Team to support field transport data crowdsourcing -- mapping rural roads for a lending program, capturing streetview imagery, and collecting post-flood road data -- and government training.
 
-```{figure} images/intro-crowdsource-laos.png
+```{figure}
 ---
 ---
 Laomap.org, is a web platform created by WB Data Lab Task Team to support field transport data crowdsourcing 
@@ -78,7 +78,7 @@ Another example -- below is a screen capture from an AWS Mechanical Turk crowdso
 | <span style="color:white">xxxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxxx</span> | ![](images/intro-crowd-turk.png) | <span style="color:white">xxxxxxxxxxxxxx</span> | <span style="color:white">xxxxxxxxxxxxxx</span> |
 | ----------------------------------------------- | ----------------------------------------------- | -------------------------------- | ----------------------------------------------- | ----------------------------------------------- |
 
-```{figure} images/favicon.ico
+```{figure}
 ---
 height: 0px
 ---
@@ -89,7 +89,7 @@ AWS Mechanical Turk crowdsourced task
 
 For newly collected data, the Lab coordinates with the DEC Development Data Hub team, which can provide support for formatting, tagging, and hosting collected datasets, as well as advisory on data acquisition, archiving, and dissemination policies and governance. For more information, see: [Development Data Hub](https://datacatalog.worldbank.org/int/getting-started)
 
-```{figure} images/intro-data-manage.png
+```{figure}
 ---
 ---
 Development Data Hub
