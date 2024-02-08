@@ -43,7 +43,7 @@ parts:
   - caption: Acknowledgements
     chapters:
       - file: docs/6-team.md
-  - caption: Work Plan Proposal
+  - caption: Example Work Plan: Water
     chapters:
       - file: docs/7-work-plan.md
   - caption: Additional Resources
