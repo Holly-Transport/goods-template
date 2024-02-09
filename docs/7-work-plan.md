@@ -132,11 +132,11 @@ The Lab team will discuss new data collection needs with the Water GP based on t
 
 ### 2 Reusable Data Products
 
-#### 2a Spatial and Temporal Drought Index Generator
+#### 2a [Spatial and Temporal Drought Index Generator](https://datapartnership.org/morocco-economic-monitor/docs/drought-summary.html)
 
 Using Standard Precipitation Index (SPI) data to map drought index in a country.
 
-#### 2b Spatial and Temporal Vegetation Index Generator
+#### 2b [Spatial and Temporal Vegetation Index Generator](https://datapartnership.org/syria-economic-monitor/notebooks/vegetation-conditions/README.html)
 
 Agricultural droughts severely impact seasonal crop production. The impact of drought -- or improvements to irrigation -- on vegetation conditions can be studied using NDVI data.
 
