@@ -136,7 +136,7 @@ The Lab team will discuss new data collection needs with the Water GP based on t
 
 Using Standard Precipitation Index (SPI) data to map drought index in a country.
 
-#### 2b Spatial and Temporal Vegetation Index Generator
+#### 2b [Spatial and Temporal Vegetation Index Generator](https://datapartnership.org/syria-economic-monitor/notebooks/vegetation-conditions/README.html)
 
 Agricultural droughts severely impact seasonal crop production. The impact of drought -- or improvements to irrigation -- on vegetation conditions can be studied using NDVI data.
 
