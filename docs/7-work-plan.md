@@ -132,7 +132,7 @@ The Lab team will discuss new data collection needs with the Water GP based on t
 
 ### 2 Reusable Data Products
 
-#### 2a Spatial and Temporal Drought Index Generator
+#### 2a [Spatial and Temporal Drought Index Generator](https://datapartnership.org/morocco-economic-monitor/docs/drought-summary.html)
 
 Using Standard Precipitation Index (SPI) data to map drought index in a country.
 
