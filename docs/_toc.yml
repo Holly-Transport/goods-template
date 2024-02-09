@@ -43,7 +43,7 @@ parts:
   - caption: Acknowledgements
     chapters:
       - file: docs/6-team.md
-  - caption: Water GCP Work Plan
+  - caption: Data Good Examples
     chapters:
       - file: docs/7-work-plan.md
   - caption: Additional Resources
