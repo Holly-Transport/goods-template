@@ -18,12 +18,13 @@ Through the GCP process, the Water GP has clearly articulated its priorities and
 #### Contributions to World Bank Water Data Portal
 
 > The team can support the the [World Bank Water Data Portal](https://wbwaterdata.org/) by contributing harmonized statistics derived from previously conducted and planned WB-led [Living Standards Measurement Study](https://microdata.worldbank.org/index.php/catalog/lsms/?page=1&ps=15&repo=lsms) household surveys, supporting analysis of risks to safe water supply and access, especially in FCVs. 
-> 
->  The team can also support development and Portal publication of new statistics that support GCP indicator requirements, such as:
-> 
+>
+> The team can also support development and Portal publication of new statistics that support GCP indicator requirements, such as:
+>
 > * <u>Baseline Spatial Location and Number of People Vulnerable to Flood and Drought Risk</u> for use in analyzing impact of sustainable water resource management programs.
-> 
 > * <u>Baseline Spatial Agricultural Relative Yield Index</u> for use in analyzing impact of investments in improved irrigation services and mnew agriculture technology.
+>
+> Finally, the team can support adding other supportive datasets not already included in the Portal, such as water pricing data collected through the World Bank's [International Comparisons Program](https://www.worldbank.org/en/programs/icp) and freshwater statistics through the [World Development Indicators](https://wdi.worldbank.org/table/3.5). 
 
 #### Government Capacity Building Program for Digitalizing and Standardizing Water-Related Data Collection Systems
 
@@ -39,8 +40,6 @@ Through the GCP process, the Water GP has clearly articulated its priorities and
 
 > **Country Pilots**. The team may support country pilots in using language learning models and generative AI to expedite digitizing water-related records (e.g., auto-tagging with meta data) and improving data and information discoverability – water, climate, and other datasets being coordinated through other GCPs. Discoverability would be improved through use of natural language queries, which would help increase government uptake. Depending on the status of data digitization, data discoverability pilots can be implemented, scaled, and reproduced relatively quickly across the portfolio through DPL and TA components of IPF programs, led by the WB Data Catalogue team.
 
-
-
 > **World Bank Water Data Portal Improvements.** The World Bank Water Data Portal can be improved with additional funcitonality that supports AI-based document and data discovery, such as using the DECDG open source platform, [NLP4Dev](https://www.nlp4dev.org/). 
 
 #### Improved Monitoring and Evaluation with Satellites
@@ -49,9 +48,9 @@ Through the GCP process, the Water GP has clearly articulated its priorities and
 
 
 
-## Work Organization
+## Data Good: Brainstorming
 
-The work is organized around four parts:
+The Data Good is organized around four parts:
 
 1. Datasets
 
@@ -62,8 +61,6 @@ The work is organized around four parts:
 4. Training
 
 The finally-produced web book that includes all relevant outputs and materials will be prepared for a pilot country but then, by design, scaleable to be fully replicated in new countries. 
-
-
 
 ### 1 Datasets
 
@@ -124,11 +121,16 @@ The outputs of this task would include:
 The Lab team will discuss new data collection needs with the Water GP based on their most urgent priorities. For starters, the Lab recommends inclusion of the followign two methods in a new data collection plan. 
 
 * The **Living Standards Measurement Study (LSMS)** is launching a new program on longitudinal high-frequency multi-topic household surveys, known as Resilient Futures. Through coordination with the Water Global Practice, the survey questions can be tailored to ensure they support measurement of access to safe water supply and sanitation, irrigation practices, and sustainable water resource management practices. 
+  * For example, in support of GCP **Pillar 1: Achieving universal access to safe water supply and sanitation**, the team can support household surveys that combine a water quality module with granular information on drinking water quality and sanitation services. The LSMS will be launching a new program on longitudinal high-frequency multi-topic household surveys known as *Resilient Futures.* The team would also support collaboration with Joint Monitoring Programme partners UNICEF and WHO to coordinate pillar measurements.
+  * Under **Pillar 2:** **Scaling up Climate Resilient Irrigation to increase food production and water productivity**, to measure climate resilient irrigation coverage, the team will draw upon ongoing sLSMS and [50x30 Initiative](https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fwww.50x2030.org.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=811056e08dfbeadfeef2d24cadc9049c00b7c0b629a9bdf6433b9fb2d46a88a7) surveys to collect gender disaggregated information on irrigation practices, and adoption of technologies.
+  * Under **Pillar 3: Reducing flood and drought risks through sustainable water resources management**, the *Resilient Futures* progra led by DECDG will support mix-mode household survey systems that will be interoperable with geospatial data sources and derived products to understand the micro-level resilience to  and impacts of extreme weather events and that will also provide opportunities for in-situ sensor deployments in sampled communities to obtain highly-localized measurements of climatic events that may otherwise be missed due to the deficiencies in the spatial and temporal resolution of publicly available satellite imagery and derived geospatial data products. 
+
+
 * The team can use **remote sensing** techniques to monitor and provide statistics on freshwater cover, flood plains, and other natural features that support the four pillars. 
-  
+
   
 
-### 2 Data Products
+### 2 Reusable Data Products
 
 #### 2a Spatial and Temporal Drought Index Generator
 
@@ -140,14 +142,20 @@ Agricultural droughts severely impact seasonal crop production. The impact of dr
 
 #### 2c Population Vulnerability to Drought and Flood Estimator
 
-Mapping SPI, population, poverty, and spatial flood risk data to identify areas where vulnerable populations are most exposed to flood and drought risk. 
+Mapping SPI, population, poverty, and spatial flood risk data to identify areas where vulnerable populations are most exposed to flood and drought risk.  
 
+#### 2d Vulnerability of International River Basins in a Changing Climate  Estimator
 
+International river basins will likely face higher hydrologic variability due to climate change. Increased floods and droughts would have economic and political consequences. Riparians of transboundary basins governed by water treaties could experience non-compliance and inter-state tensions if flow falls below levels presumed in a treaty. 
 
+#### 2e Population Vulnerability due to Sea Level rise and Storm Surge  Estimator
 
+ Hundreds of millions of families living in coastal areas worldwide face a range of risks related to climate change. Leveraging advancement in remote sensing measurement, detailed [population](https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fwww.popgrid.org.mcas.ms%2F%3FMcasTsid%3D15600&McasCSRF=811056e08dfbeadfeef2d24cadc9049c00b7c0b629a9bdf6433b9fb2d46a88a7) and [economic](https://mcas-proxyweb.mcas.ms/certificate-checker?login=false&originalUrl=https%3A%2F%2Fdatacatalog.worldbank.org.mcas.ms%2Fdataset%2Fgross-domestic-product-2010%3FMcasTsid%3D15600&McasCSRF=811056e08dfbeadfeef2d24cadc9049c00b7c0b629a9bdf6433b9fb2d46a88a7) data represent an essential component in the quantification of vulnerability in a changing climate. 
 
 ### 3 Insights and Indicators
 
-### 4 Resources
+*Pending Discussions*
 
-Proposed team and budget proposal, timeline. 
+### 4 Training
+
+*Pending Discussions*
