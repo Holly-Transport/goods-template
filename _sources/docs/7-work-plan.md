@@ -1,4 +1,4 @@
-# Work Plan Example: Water GCP
+# Data Good Example: Water GCP
 
 ## Background
 
@@ -109,9 +109,9 @@ The outputs of this task would include:
 
 * Cutomizable Web-Based Guidebook for Water Data Management (e.g, making existing data discoverable, sharable, and usable).
 
-* Customizable Web-Based Training Materials (Script, Presentations, Hands-On Exercises, etc.) for Pilot Government Counterpart for Data Digitization and Management
+* Customizable Web-Based Training Materials (Script, Presentations, Hands-On Exercises, etc.) for Pilot Government Counterpart on Data Digitization and Management
 
-* Open-Source Code for Using Large Language Models to Make Data Discoverable
+* Open-Source Code for Using Large Language Models (LLMs) to Make Water Data Discoverable
 
 * Custom Catalogue Platform (with user interface design and hosting supported by a local vendor) for Data Discovery
 
@@ -130,9 +130,21 @@ The Lab team will discuss new data collection needs with the Water GP based on t
 
 ### 2 Data Products
 
-#### 2a Drought Analytics
+#### 2a Spatial and Temporal Drought Index Generator
 
-#### 2b
+Using Standard Precipitation Index (SPI) data to map drought index in a country.
+
+#### 2b Spatial and Temporal Vegetation Index Generator
+
+Agricultural droughts severely impact seasonal crop production. The impact of drought -- or improvements to irrigation -- on vegetation conditions can be studied using NDVI data.
+
+#### 2c Population Vulnerability to Drought and Flood Estimator
+
+Mapping SPI, population, poverty, and spatial flood risk data to identify areas where vulnerable populations are most exposed to flood and drought risk. 
+
+
+
+
 
 ### 3 Insights and Indicators
 

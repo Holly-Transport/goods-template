@@ -9,7 +9,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="generator" content="Docutils 0.17.1: http://docutils.sourceforge.net/" />
 
-    <title>Work Plan Example: Water GCP &#8212; Data Goods Template</title>
+    <title>Data Good Example: Water GCP &#8212; Data Goods Template</title>
   
   
   
@@ -68,7 +68,7 @@
     <link rel="prev" title="Data Goods Team and Acknowedgements" href="6-team.html" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
-    <meta name="docbuild:last-update" content="Feb 08, 2024"/>
+    <meta name="docbuild:last-update" content="Feb 09, 2024"/>
   </head>
   
   
@@ -229,7 +229,7 @@
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Water GCP Work Plan</span></p>
 <ul class="current nav bd-sidenav">
-<li class="toctree-l1 current active"><a class="current reference internal" href="#">Work Plan Example: Water GCP</a></li>
+<li class="toctree-l1 current active"><a class="current reference internal" href="#">Data Good Example: Water GCP</a></li>
 </ul>
 <p aria-level="2" class="caption" role="heading"><span class="caption-text">Additional Resources</span></p>
 <ul class="nav bd-sidenav">
@@ -439,7 +439,7 @@ document.write(`
               
 
 <div id="jb-print-docs-body" class="onlyprint">
-    <h1>Work Plan Example: Water GCP</h1>
+    <h1>Data Good Example: Water GCP</h1>
     <!-- Table of contents -->
     <div id="print-main-content">
         <div id="jb-print-toc">
@@ -465,8 +465,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-products">2 Data Products</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-drought-analytics">2a Drought Analytics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b">2b</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-spatial-and-temporal-drought-index-generator">2a Spatial and Temporal Drought Index Generator</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-spatial-and-temporal-vegetation-index-generator">2b Spatial and Temporal Vegetation Index Generator</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-population-vulnerability-to-drought-and-flood-estimator">2c Population Vulnerability to Drought and Flood Estimator</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insights-and-indicators">3 Insights and Indicators</a></li>
@@ -484,8 +485,8 @@ document.write(`
 <div id="searchbox"></div>
                 <article class="bd-article">
                   
-  <section class="tex2jax_ignore mathjax_ignore" id="work-plan-example-water-gcp">
-<h1>Work Plan Example: Water GCP<a class="headerlink" href="#work-plan-example-water-gcp" title="Permalink to this heading">#</a></h1>
+  <section class="tex2jax_ignore mathjax_ignore" id="data-good-example-water-gcp">
+<h1>Data Good Example: Water GCP<a class="headerlink" href="#data-good-example-water-gcp" title="Permalink to this heading">#</a></h1>
 <section id="background">
 <h2>Background<a class="headerlink" href="#background" title="Permalink to this heading">#</a></h2>
 <p>The Clean Water and Sanitation Global Challenge Program  seeks to strengthen water security and increase access to safe water supply and sanitation through systems change and investing in the scale-up of more sustainable water management and disaster risk reduction solutions. To this end, the Approach Paper annex presents data requirements to measure outcomes in the four GCP Pillars. Following is an excerpt from the paper:</p>
@@ -578,8 +579,8 @@ document.write(`
 <ul class="simple">
 <li><p>Customizable Web-Based Guidebook for Digitizing Water Ministry (and/or other relevant and participating Government Department) Paper Records</p></li>
 <li><p>Cutomizable Web-Based Guidebook for Water Data Management (e.g, making existing data discoverable, sharable, and usable).</p></li>
-<li><p>Customizable Web-Based Training Materials (Script, Presentations, Hands-On Exercises, etc.) for Pilot Government Counterpart for Data Digitization and Management</p></li>
-<li><p>Open-Source Code for Using Large Language Models to Make Data Discoverable</p></li>
+<li><p>Customizable Web-Based Training Materials (Script, Presentations, Hands-On Exercises, etc.) for Pilot Government Counterpart on Data Digitization and Management</p></li>
+<li><p>Open-Source Code for Using Large Language Models (LLMs) to Make Water Data Discoverable</p></li>
 <li><p>Custom Catalogue Platform (with user interface design and hosting supported by a local vendor) for Data Discovery</p></li>
 <li><p>Implementation Support in Pilot Country</p></li>
 </ul>
@@ -595,11 +596,17 @@ document.write(`
 </section>
 <section id="data-products">
 <h3>2 Data Products<a class="headerlink" href="#data-products" title="Permalink to this heading">#</a></h3>
-<section id="a-drought-analytics">
-<h4>2a Drought Analytics<a class="headerlink" href="#a-drought-analytics" title="Permalink to this heading">#</a></h4>
+<section id="a-spatial-and-temporal-drought-index-generator">
+<h4>2a Spatial and Temporal Drought Index Generator<a class="headerlink" href="#a-spatial-and-temporal-drought-index-generator" title="Permalink to this heading">#</a></h4>
+<p>Using Standard Precipitation Index (SPI) data to map drought index in a country.</p>
 </section>
-<section id="b">
-<h4>2b<a class="headerlink" href="#b" title="Permalink to this heading">#</a></h4>
+<section id="b-spatial-and-temporal-vegetation-index-generator">
+<h4>2b Spatial and Temporal Vegetation Index Generator<a class="headerlink" href="#b-spatial-and-temporal-vegetation-index-generator" title="Permalink to this heading">#</a></h4>
+<p>Agricultural droughts severely impact seasonal crop production. The impact of drought – or improvements to irrigation – on vegetation conditions can be studied using NDVI data.</p>
+</section>
+<section id="c-population-vulnerability-to-drought-and-flood-estimator">
+<h4>2c Population Vulnerability to Drought and Flood Estimator<a class="headerlink" href="#c-population-vulnerability-to-drought-and-flood-estimator" title="Permalink to this heading">#</a></h4>
+<p>Mapping SPI, population, poverty, and spatial flood risk data to identify areas where vulnerable populations are most exposed to flood and drought risk.</p>
 </section>
 </section>
 <section id="insights-and-indicators">
@@ -683,8 +690,9 @@ document.write(`
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#data-products">2 Data Products</a><ul class="nav section-nav flex-column">
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-drought-analytics">2a Drought Analytics</a></li>
-<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b">2b</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#a-spatial-and-temporal-drought-index-generator">2a Spatial and Temporal Drought Index Generator</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#b-spatial-and-temporal-vegetation-index-generator">2b Spatial and Temporal Vegetation Index Generator</a></li>
+<li class="toc-h4 nav-item toc-entry"><a class="reference internal nav-link" href="#c-population-vulnerability-to-drought-and-flood-estimator">2c Population Vulnerability to Drought and Flood Estimator</a></li>
 </ul>
 </li>
 <li class="toc-h3 nav-item toc-entry"><a class="reference internal nav-link" href="#insights-and-indicators">3 Insights and Indicators</a></li>
@@ -717,7 +725,7 @@ By Development Data Group
   
   <div class="footer-item">
     <p class="last-updated">
-  Last updated on Feb 08, 2024.
+  Last updated on Feb 09, 2024.
   <br/>
 </p>
   </div>
