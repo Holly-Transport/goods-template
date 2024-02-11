@@ -1,4 +1,4 @@
-# Data Good Example: Water GCP
+# Data Good Example: Water Global Practice
 
 ## Objectives
 
