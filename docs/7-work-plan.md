@@ -66,7 +66,7 @@ The finally-produced web book that includes all relevant outputs and materials w
 
 #### 1a Existing Global and Pilot Country Data
 
-As a first step, the Lab team will explore options to curate a hosted collection of relevant datasets (both from the Water Data Portal and from new sources), including but not limited to:
+As a first step, the team will explore options to curate a hosted collection of relevant datasets (both from the Water Data Portal and from new sources), including but not limited to:
 
 * Spatial population and demographics
 
